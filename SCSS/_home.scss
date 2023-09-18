@@ -12,34 +12,84 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 70px;
             font-weight: 600;
+            position: relative;
     
             #changing-word {
                 color: #5330C1;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 150px;
                 font-weight: 900;
-                
-                position: relative;
-                bottom: 1rem;
-    
                 text-transform: uppercase;
-                animation: fade 2s infinite 2s;
+                display: inline-block;
+
+                span{ 
+                    position: absolute;
+                    top: 3rem;
+                    left: 0;
+                    overflow: hidden;
+                    animation: fade 10s linear infinite;
+                    opacity: 0;
                
-                @keyframes fade {
-                    0% {
-                      
-                      transform: translateY(0%);
+                    @keyframes fade {
+                        0% {
+                        opacity: 0;
+                        transform: translateY(-50px);
+                        }
+
+                        2% {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+
+                        18% {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+
+                        20% {
+                            opacity: 0;
+                            transform: translateY(50px);
+                        }
+                        
+                        
+                        100% {
+                            opacity: 0;
+                            transform: translateY(50px);
+                        }
+                    }  
+
+                    &:nth-child(1){
+                        animation-delay: 0;
                     }
-                    
-                    100% {
-                      
-                      transform: translateY(-5%);
+
+                    &:nth-child(2){
+                        animation-delay: 2s;
                     }
-                }      
+
+                    &:nth-child(3){
+                        animation-delay: 4s;
+                    }
+
+                    &:nth-child(4){
+                        animation-delay: 6s;
+                    }
+
+                    &:nth-child(5){
+                        animation-delay: 8s;
+                    }
+                }                   
             }        
         }
-    
+        
+        .dots-img{
+            position: relative;
+            top: 10rem;
+        }
+
         p{
+            position: relative;
+            top: 10rem;
+
             color: #302F2F;
             font-family: 'Montserrat Alternates', sans-serif;
             font-size: 24px;
@@ -52,9 +102,23 @@
 }
 
 #portfolio{
-    height: 250vh;
+    height: 350vh;
     background-color: #F5F5F5;
-    display: none;
+
+    .columns-container{
+        display: flex;
+        justify-content: center;      
+
+        .columns{
+            display: flex;
+            flex-direction: column;
+
+            img{
+                margin-bottom: 0.5rem;    
+            }
+        }
+    }
+   
 }
 
 #quienesSomos{
@@ -197,7 +261,7 @@
                 font-weight: 600;
                 text-transform: uppercase;
 
-                .categories{
+                .categories-title{
                     width: 195px;
                     height: 50px;
                     border-radius: 20px;
@@ -245,7 +309,7 @@
 }
 
 #stakeholders{
-    height: 300vh;
+    height: 100vh;
     background-color: #F5F5F5;  
     
     h2{
@@ -268,7 +332,7 @@
  
 
     p{     
-        margin: 2rem 0 4rem 5rem;
+        margin: 2rem 0 3rem 5rem;
         color: #302F2F;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 24px;
@@ -296,5 +360,32 @@
             }   
         }
     }    
+
+    .logos{
+        margin-top: 10rem;
+        overflow: hidden;
+        white-space: nowrap;
+
+        @keyframes slide {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+
+        .logo-slide{
+            display: inline-block;
+            animation: 35s slide infinite linear;
+    
+            img{
+                height: 50px;
+                margin: 0 40px;
+            }
+        }
+    }  
 }
+
+
   
