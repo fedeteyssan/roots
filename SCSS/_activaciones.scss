@@ -53,15 +53,14 @@
 
                 .categories-cards{
                     position: relative;
+                    height: 320px;
 
                     width: 0px;
                     flex-grow: 1;
                     object-fit: cover;
-                    opacity: 0.9;
                     transition: 0.5 ease;
 
                     &:hover{
-                        opacity: 1;
                         width: 300px;
                     }
                                         
@@ -69,23 +68,20 @@
                         opacity:1;
                     }
 
-                    
-
-
-                   
                     span{
                         color: #000;
-                        font-family: 'Montserrat Alternates', sans-serif;
-                        font-size: 16px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 15px;
                         font-weight: 500;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         background: #FFF;
     
                         position: absolute;
-                        top: 65%;
-                        left: 8rem;
+                        top: 70%;
+                        left: 50%;
+                        transform: translateX(-50%);
                         
-                        padding: 0.5rem 1rem;
+                        padding: 0.5rem 0.75rem;
     
                         width: fit-content;
     

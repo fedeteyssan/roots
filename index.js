@@ -16,7 +16,6 @@ document.body.parentNode||document.body).scrollTop;return a!=g?!0:!1},t=function
 r();for(var a=0;a<b.elems.length;a++){var e=v(b.elems[a]);c.push(e)}window.addEventListener("resize",function(){n()});t();n()})();return b};return h});
 
 
-
 /*setInterval(function() {
   var words = ['Ready', 'Creativity', 'Design', 'Experience', 'Agility', 'Efficient']; // Array of words to rotate
   var changingWord = document.getElementById('changing-word');
