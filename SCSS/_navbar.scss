@@ -51,6 +51,8 @@
     }
 
     @media screen and (max-width: 769px) {
+        
+        flex-direction: column;
 
         ul{
             flex-direction: column;
@@ -61,30 +63,22 @@
             a{
                 display: none;
             }
+            
         } 
 
-        .icon{
+        .icon {
             display: block;
+            position: absolute;
+            right: 3rem;
+            top: 2rem;
         }
     }
-    
 }
-
 
 .responsive{
-    @media screen and (max-width: 769px) {
-        position: relative;
-        flex-direction: column;
-
-        a{
-            display: block !important;
-            text-align: left;
-        }
-
-        .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
+    a{
+        display: block !important;
+        text-align: left;
     }
 }
+

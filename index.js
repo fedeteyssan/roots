@@ -1,5 +1,4 @@
 //Navbar responsive
-
 function responsiveNav() {
   var x = document.getElementById("my-nav");
   if (x.className === "topnav") {
@@ -11,22 +10,8 @@ function responsiveNav() {
 
 
 //Botones links
-const btnNosotros = document.getElementById('btn-nosotros');
-const nosotros = document.getElementById("quienesSomos")
-
-btnNosotros.addEventListener('click', () => nosotros.scrollIntoView({
-  behavior: 'smooth',
-}));
-
-const btnServicios = document.getElementById('btn-servicios');
-const servicios = document.getElementById("servicios")
-
-btnServicios.addEventListener('click', () => servicios.scrollIntoView({
-  behavior: 'smooth',
-}));
-
 const btnContacto = document.getElementById('btn-contacto');
-const contacto = document.getElementById("stakeholders")
+const contacto = document.getElementById("footer")
 
 btnContacto.addEventListener('click', () => contacto.scrollIntoView({
   behavior: 'smooth',

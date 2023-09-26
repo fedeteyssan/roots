@@ -46,6 +46,9 @@
   display: none;
 }
 @media screen and (max-width: 769px) {
+  .topnav {
+    flex-direction: column;
+  }
   .topnav ul {
     flex-direction: column;
     align-items: baseline;
@@ -57,23 +60,15 @@
   }
   .topnav .icon {
     display: block;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
   }
 }
 
-@media screen and (max-width: 769px) {
-  .responsive {
-    position: relative;
-    flex-direction: column;
-  }
-  .responsive a {
-    display: block !important;
-    text-align: left;
-  }
-  .responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+.responsive a {
+  display: block !important;
+  text-align: left;
 }
 
 footer {
@@ -205,17 +200,17 @@ footer div .social-logos p {
   perspective: 1000px;
   overflow: hidden;
 }
-#portfolio .columns-container {
+#portfolio .grid-container {
   display: flex;
   justify-content: center;
 }
-#portfolio .columns-container .columns {
+#portfolio .grid-container .column {
   display: flex;
   flex-direction: column;
   transform-style: preserve-3d;
 }
-#portfolio .columns-container .columns img {
-  margin-bottom: 0.5rem;
+#portfolio .grid-container .column img {
+  margin: 0.25rem 0.5rem;
 }
 
 #quienesSomos {
