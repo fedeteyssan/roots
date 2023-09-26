@@ -1,0 +1,146 @@
+#servicios{
+    padding-top: 8rem;
+    background-color: #F5F5F5;
+
+    .claim{
+        margin-left: 5rem;
+        margin-bottom: 10rem;
+
+        h2{
+            color: #302F2F;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            line-height: 80px;
+
+            span{
+                color: #5330C1;
+                font-size: 90px;
+                font-weight: 900;
+            }
+        }
+
+        p{
+            color: #000;
+            font-size: 30px;
+            font-weight: 400;
+            margin-top: 1rem;
+
+            span{
+                font-weight: 900;
+            }
+        }  
+    }
+
+    .card-container{
+        margin-left: 5rem;
+        margin-top: 5rem;
+        position: relative;
+
+        display: flex;
+
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+
+        .image-container{
+
+            margin-right: 2rem;
+
+            .background{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 620px;
+                height: 330px;
+                border-radius: 40px;
+                border: 1px solid #000;
+                background: #6243C3;
+                position: relative;
+                z-index: 1;
+            }
+        
+            .shadow{
+                width: 620px;
+                height: 330px;
+                border-radius: 40px;
+                background: #212222;
+    
+                position: absolute;
+                top: 10%;
+                left: -1.5%;
+            }
+        }
+
+        .text-container{
+
+            h3{
+                color: #302F2F;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 50px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                @media screen and (max-width: 769px) {
+                    margin-top: 6rem;
+                }
+            }
+
+            .group{
+                display: flex;
+                margin-top: 1rem;
+
+                color: #302F2F;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                .categories-title{
+                    width: 195px;
+                    height: 50px;
+                    border-radius: 20px;
+                    border: 2px solid #000;
+                    box-shadow: -4px 1px 5px 0px #2C1D58;
+                    text-align: center;
+                    line-height: 3.25rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            .group2{
+                margin-left: 8rem;
+            }
+
+            .service-description{
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                color: #302F2F;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .Btn-verMas{
+                img{
+                    animation: pulse 2s infinite;
+                    @keyframes pulse {
+                        0% {
+                            transform: scale(0.95);
+                        }
+                    
+                        70% {
+                            transform: scale(1);
+                        }
+                    
+                        100% {
+                            transform: scale(0.95);
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}

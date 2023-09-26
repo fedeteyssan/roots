@@ -256,12 +256,12 @@ footer div .social-logos p {
   }
 }
 
-#servicios {
+#queHacemos {
   padding-top: 6rem;
   height: calc(300vh - 6rem);
   background-color: #F5F5F5;
 }
-#servicios h2 {
+#queHacemos h2 {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -269,10 +269,199 @@ footer div .social-logos p {
   text-transform: uppercase;
   margin-left: 5rem;
 }
-#servicios h2 span {
+#queHacemos h2 span {
   color: #5330C1;
   font-size: 90px;
   font-weight: 700;
+}
+#queHacemos .card-container {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 769px) {
+  #queHacemos .card-container {
+    flex-direction: column;
+  }
+}
+#queHacemos .card-container .image-container {
+  margin-right: 2rem;
+}
+#queHacemos .card-container .image-container .background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  height: 330px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  background: #6243C3;
+  position: relative;
+  z-index: 1;
+}
+#queHacemos .card-container .image-container .shadow {
+  width: 620px;
+  height: 330px;
+  border-radius: 40px;
+  background: #212222;
+  position: absolute;
+  top: 10%;
+  left: -1.5%;
+}
+#queHacemos .card-container .text-container h3 {
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 769px) {
+  #queHacemos .card-container .text-container h3 {
+    margin-top: 6rem;
+  }
+}
+#queHacemos .card-container .text-container .group {
+  display: flex;
+  margin-top: 1rem;
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#queHacemos .card-container .text-container .group .categories-title {
+  width: 195px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  box-shadow: -4px 1px 5px 0px #2C1D58;
+  text-align: center;
+  line-height: 3.25rem;
+  margin-right: 1rem;
+}
+#queHacemos .card-container .text-container .group2 {
+  margin-left: 8rem;
+}
+#queHacemos .card-container .text-container .service-description {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#queHacemos .card-container .text-container .Btn-verMas img {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+#stakeholders {
+  padding-top: 6rem;
+  height: calc(100vh - 6rem);
+  background-color: #F5F5F5;
+}
+#stakeholders h2 {
+  margin-left: 5rem;
+  margin-bottom: 2.5rem;
+  color: #302F2F;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+}
+#stakeholders h2 span {
+  color: #5330C1;
+}
+#stakeholders .dots-img {
+  margin-left: 5rem;
+}
+#stakeholders p {
+  margin: 2rem 0 3rem 5rem;
+  color: #302F2F;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+#stakeholders .btn-conocenos {
+  position: absolute;
+  right: 10rem;
+}
+#stakeholders .btn-conocenos img {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+#stakeholders .logos {
+  margin-top: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#stakeholders .logos .logo-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+#stakeholders .logos .logo-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+#servicios {
+  padding-top: 8rem;
+  background-color: #F5F5F5;
+}
+#servicios .claim {
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+}
+#servicios .claim h2 {
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 80px;
+}
+#servicios .claim h2 span {
+  color: #5330C1;
+  font-size: 90px;
+  font-weight: 900;
+}
+#servicios .claim p {
+  color: #000;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+#servicios .claim p span {
+  font-weight: 900;
 }
 #servicios .card-container {
   margin-left: 5rem;
@@ -366,72 +555,6 @@ footer div .social-logos p {
   }
 }
 
-#stakeholders {
-  padding-top: 6rem;
-  height: calc(100vh - 6rem);
-  background-color: #F5F5F5;
-}
-#stakeholders h2 {
-  margin-left: 5rem;
-  margin-bottom: 2.5rem;
-  color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 70px;
-  font-weight: 600;
-}
-#stakeholders h2 span {
-  color: #5330C1;
-}
-#stakeholders .dots-img {
-  margin-left: 5rem;
-}
-#stakeholders p {
-  margin: 2rem 0 3rem 5rem;
-  color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-}
-#stakeholders .btn-conocenos {
-  position: absolute;
-  right: 10rem;
-}
-#stakeholders .btn-conocenos img {
-  animation: pulse 2s infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-  }
-  70% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.95);
-  }
-}
-#stakeholders .logos {
-  margin-top: 10rem;
-  overflow: hidden;
-  white-space: nowrap;
-}
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-#stakeholders .logos .logo-slide {
-  display: inline-block;
-  animation: 35s slide infinite linear;
-}
-#stakeholders .logos .logo-slide img {
-  height: 50px;
-  margin: 0 40px;
-}
-
 #activaciones {
   padding-top: 8rem;
   background-color: #F5F5F5;
@@ -485,7 +608,7 @@ footer div .social-logos p {
   flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 0.5 ease;
+  transition: 0.8 ease;
 }
 #activaciones .categories-container .categories .categories-images-container .categories-cards:hover {
   width: 300px;
