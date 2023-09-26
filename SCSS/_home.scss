@@ -102,8 +102,10 @@
 }
 
 #portfolio{
-    height: calc(400vh - 6rem);
+    height: 300vh;
     background-color: #F5F5F5;
+    perspective: 1000px;
+    overflow: hidden;
 
     .columns-container{
         display: flex;
@@ -112,6 +114,7 @@
         .columns{
             display: flex;
             flex-direction: column;
+            transform-style: preserve-3d;
 
             img{
                 margin-bottom: 0.5rem;    

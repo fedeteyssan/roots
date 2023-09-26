@@ -1,3 +1,5 @@
+//Navbar responsive
+
 function responsiveNav() {
   var x = document.getElementById("my-nav");
   if (x.className === "topnav") {
@@ -6,6 +8,44 @@ function responsiveNav() {
     x.className = "topnav";
   }
 }
+
+
+//Botones links
+const btnNosotros = document.getElementById('btn-nosotros');
+const nosotros = document.getElementById("quienesSomos")
+
+btnNosotros.addEventListener('click', () => nosotros.scrollIntoView({
+  behavior: 'smooth',
+}));
+
+const btnServicios = document.getElementById('btn-servicios');
+const servicios = document.getElementById("servicios")
+
+btnServicios.addEventListener('click', () => servicios.scrollIntoView({
+  behavior: 'smooth',
+}));
+
+const btnContacto = document.getElementById('btn-contacto');
+const contacto = document.getElementById("stakeholders")
+
+btnContacto.addEventListener('click', () => contacto.scrollIntoView({
+  behavior: 'smooth',
+}));
+
+
+//Column speed
+window.addEventListener('scroll', function() {
+  // Calculate the scroll position
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // Adjust the position of each column based on the scroll position
+  var columns = document.getElementsByClassName('column');
+  Array.prototype.forEach.call(columns, function(column, index) {
+    var speed = index + 0; // Adjust the speed for each column
+    var translateY = scrollTop / speed;
+    column.style.transform = 'translateY(' + translateY + 'px)';
+  });
+});
 
 
 //Rellax
