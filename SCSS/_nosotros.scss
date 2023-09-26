@@ -1,0 +1,73 @@
+#nosotros{
+    padding-top: 8rem;
+    background-color: #F5F5F5;
+
+    h2{
+        color: #302F2F;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 70px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    h3{
+        color: #5330C1;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+    }  
+
+    p{
+        color: #000;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }   
+    
+    #claims-container{
+
+        .claim{
+            height: 100vh;
+        }
+
+        #claim1{
+            h2{
+                text-align: center;
+                line-height: 80px;
+
+                span{
+                    color: #5330C1;
+                    font-size: 90px;
+                    font-weight: 900;
+                }
+            }  
+            
+            p{
+                span{
+                    font-weight: 900;
+                }
+            }
+        }
+        
+        #claim3{
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+    #marcas{
+        margin-left: 5rem;
+        h2{
+            margin-bottom: 0px;
+
+            span{
+                color: #5330C1;
+            }
+        }  
+    }
+}

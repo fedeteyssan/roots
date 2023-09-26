@@ -2,9 +2,11 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 @import "../SCSS/navbar";
 @import "../SCSS/footer";
 @import "../SCSS/home";
 @import "../SCSS/activaciones";
+@import "../SCSS/nosotros";

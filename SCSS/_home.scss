@@ -102,7 +102,7 @@
 }
 
 #portfolio{
-    height: 350vh;
+    height: calc(400vh - 6rem);
     background-color: #F5F5F5;
 
     .columns-container{
@@ -118,11 +118,11 @@
             }
         }
     }
-   
 }
 
 #quienesSomos{
-    height: 100vh;
+    padding-top: 6rem;
+    height: calc(100vh - 6rem);
     background-color: #F5F5F5;
 
     .quote1{
@@ -178,7 +178,8 @@
 }
 
 #servicios{
-    height: 300vh;
+    padding-top: 6rem;
+    height: calc(300vh - 6rem);
     background-color: #F5F5F5;
 
     h2{
@@ -309,7 +310,8 @@
 }
 
 #stakeholders{
-    height: 100vh;
+    padding-top: 6rem;
+    height: calc(100vh - 6rem);
     background-color: #F5F5F5;  
     
     h2{

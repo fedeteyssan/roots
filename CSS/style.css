@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .topnav {
@@ -76,6 +77,7 @@
 }
 
 footer {
+  padding-top: 6rem;
   height: 20vh;
   background-color: #F5F5F5;
 }
@@ -198,7 +200,7 @@ footer div .social-logos p {
 }
 
 #portfolio {
-  height: 350vh;
+  height: calc(400vh - 6rem);
   background-color: #F5F5F5;
 }
 #portfolio .columns-container {
@@ -214,7 +216,8 @@ footer div .social-logos p {
 }
 
 #quienesSomos {
-  height: 100vh;
+  padding-top: 6rem;
+  height: calc(100vh - 6rem);
   background-color: #F5F5F5;
 }
 #quienesSomos .quote1 {
@@ -256,7 +259,8 @@ footer div .social-logos p {
 }
 
 #servicios {
-  height: 300vh;
+  padding-top: 6rem;
+  height: calc(300vh - 6rem);
   background-color: #F5F5F5;
 }
 #servicios h2 {
@@ -365,7 +369,8 @@ footer div .social-logos p {
 }
 
 #stakeholders {
-  height: 100vh;
+  padding-top: 6rem;
+  height: calc(100vh - 6rem);
   background-color: #F5F5F5;
 }
 #stakeholders h2 {
@@ -505,4 +510,59 @@ footer div .social-logos p {
   width: -moz-fit-content;
   width: fit-content;
   opacity: 0;
+}
+
+#nosotros {
+  padding-top: 8rem;
+  background-color: #F5F5F5;
+}
+#nosotros h2 {
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+#nosotros h3 {
+  color: #5330C1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#nosotros p {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+#nosotros #claims-container .claim {
+  height: 100vh;
+}
+#nosotros #claims-container #claim1 h2 {
+  text-align: center;
+  line-height: 80px;
+}
+#nosotros #claims-container #claim1 h2 span {
+  color: #5330C1;
+  font-size: 90px;
+  font-weight: 900;
+}
+#nosotros #claims-container #claim1 p span {
+  font-weight: 900;
+}
+#nosotros #claims-container #claim3 p {
+  margin-top: 1rem;
+}
+#nosotros #marcas {
+  margin-left: 5rem;
+}
+#nosotros #marcas h2 {
+  margin-bottom: 0px;
+}
+#nosotros #marcas h2 span {
+  color: #5330C1;
 }/*# sourceMappingURL=style.css.map */
