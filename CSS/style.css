@@ -9,7 +9,7 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  padding: 2rem 0;
+  padding: 1.5rem 0 1rem;
   background-color: #F5F5F5;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
@@ -48,12 +48,20 @@
 @media screen and (max-width: 769px) {
   .topnav {
     flex-direction: column;
+    height: 1rem;
+  }
+  .topnav .logo {
+    padding-left: 1rem;
+    width: 20%;
+  }
+  .topnav .logo img {
+    width: 100%;
   }
   .topnav ul {
     flex-direction: column;
     align-items: baseline;
     margin-top: 1rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .topnav ul a {
     display: none;
@@ -62,16 +70,20 @@
     display: block;
     position: absolute;
     right: 3rem;
-    top: 2rem;
+    top: 1.5rem;
   }
 }
 
+.responsive {
+  height: 8rem;
+}
 .responsive a {
   display: block !important;
-  text-align: left;
+  text-align: left !important;
 }
 
 footer {
+  display: none;
   padding-top: 6rem;
   height: 20vh;
   background-color: #F5F5F5;
@@ -122,21 +134,21 @@ footer div .social-logos p {
 #main .claim h1 {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 70px;
+  font-size: 5vw;
   font-weight: 600;
   position: relative;
 }
 #main .claim h1 #changing-word {
   color: #5330C1;
   font-family: "Montserrat", sans-serif;
-  font-size: 150px;
+  font-size: 10vw;
   font-weight: 900;
   text-transform: uppercase;
   display: inline-block;
 }
 #main .claim h1 #changing-word span {
   position: absolute;
-  top: 3rem;
+  top: 4vw;
   left: 0;
   overflow: hidden;
   animation: fade 10s linear infinite;
@@ -186,12 +198,53 @@ footer div .social-logos p {
 #main .claim p {
   position: relative;
   top: 10rem;
+  width: 550px;
   color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
   margin-top: 2rem;
+}
+@media screen and (max-width: 769px) {
+  #main .claim {
+    margin-left: 1rem;
+  }
+  #main .claim h1 {
+    font-size: 6vw;
+  }
+  #main .claim h1 #changing-word {
+    font-size: 12vw;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+    2% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    18% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    20% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+  #main .claim .dots-img {
+    width: 2.5rem;
+  }
+  #main .claim p {
+    font-size: 1.5rem;
+    width: 85%;
+  }
 }
 
 #portfolio {
@@ -212,6 +265,15 @@ footer div .social-logos p {
 #portfolio .grid-container .column img {
   margin: 0.25rem 0.5rem;
 }
+@media screen and (max-width: 769px) {
+  #portfolio {
+    height: 100vh;
+  }
+  #portfolio img {
+    width: 95%;
+    margin: 0.125rem 0.25rem;
+  }
+}
 
 #quienesSomos {
   padding-top: 6rem;
@@ -222,22 +284,23 @@ footer div .social-logos p {
   margin-left: 5rem;
   margin-bottom: 2.5rem;
   color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 600;
+  width: 65%;
 }
 #quienesSomos .quote1 span {
   color: #5330C1;
 }
 #quienesSomos div {
   position: absolute;
-  right: 10rem;
+  right: 5rem;
   text-align: right;
 }
 #quienesSomos div .quote2 {
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 2.5rem 50rem;
   color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-weight: 300;
 }
@@ -255,8 +318,25 @@ footer div .social-logos p {
     transform: scale(0.95);
   }
 }
+@media screen and (max-width: 769px) {
+  #quienesSomos .quote1 {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  #quienesSomos div {
+    right: 1rem;
+  }
+  #quienesSomos div .dots-img {
+    width: 2.5rem;
+  }
+  #quienesSomos div .quote2 {
+    font-size: 1rem;
+    margin-left: 5rem;
+  }
+}
 
 #queHacemos {
+  display: none;
   padding-top: 6rem;
   height: calc(300vh - 6rem);
   background-color: #F5F5F5;
@@ -367,6 +447,7 @@ footer div .social-logos p {
 }
 
 #stakeholders {
+  display: none;
   padding-top: 6rem;
   height: calc(100vh - 6rem);
   background-color: #F5F5F5;
@@ -375,7 +456,7 @@ footer div .social-logos p {
   margin-left: 5rem;
   margin-bottom: 2.5rem;
   color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 600;
 }
@@ -388,7 +469,7 @@ footer div .social-logos p {
 #stakeholders p {
   margin: 2rem 0 3rem 5rem;
   color: #302F2F;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
 }
@@ -661,7 +742,7 @@ footer div .social-logos p {
   font-weight: 400;
 }
 #nosotros #claims-container .claim {
-  height: 100vh;
+  margin-bottom: 10rem;
 }
 #nosotros #claims-container #claim1 h2 {
   text-align: center;
@@ -678,6 +759,26 @@ footer div .social-logos p {
 #nosotros #claims-container #claim3 p {
   margin-top: 1rem;
 }
+#nosotros #claims-container .img-container {
+  margin-top: 2rem;
+}
+#nosotros #claims-container .img-container .revealing-image {
+  animation: auto linear reveal both;
+  animation-timeline: view();
+  animation-range: entry 60% cover 50%;
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(0% 60% 0% 50%);
+            clip-path: inset(0% 60% 0% 50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+            clip-path: inset(0% 0% 0% 0%);
+  }
+}
 #nosotros #marcas {
   margin-left: 5rem;
 }
@@ -686,4 +787,25 @@ footer div .social-logos p {
 }
 #nosotros #marcas h2 span {
   color: #5330C1;
+}
+#nosotros #marcas .logos {
+  margin-top: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#nosotros #marcas .logos .logo-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+#nosotros #marcas .logos .logo-slide img {
+  height: 50px;
+  margin: 0 40px;
 }/*# sourceMappingURL=style.css.map */

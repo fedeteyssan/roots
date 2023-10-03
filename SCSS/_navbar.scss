@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 100;
 
-    padding: 2rem 0;
+    padding: 1.5rem 0 1rem;
 
     background-color: #F5F5F5;
     overflow: hidden;
@@ -53,12 +53,22 @@
     @media screen and (max-width: 769px) {
         
         flex-direction: column;
+        height: 1rem;
+
+        .logo{
+            padding-left: 1rem;
+            width: 20%;
+            
+            img{
+                width: 100%;
+            }
+        }
 
         ul{
             flex-direction: column;
             align-items: baseline;
             margin-top: 1rem;
-            margin-left: 3rem;
+            margin-left: 1rem;
 
             a{
                 display: none;
@@ -70,15 +80,16 @@
             display: block;
             position: absolute;
             right: 3rem;
-            top: 2rem;
+            top:1.5rem;
         }
     }
 }
 
 .responsive{
+    height: 8rem;
     a{
         display: block !important;
-        text-align: left;
+        text-align: left !important;
     }
 }
 

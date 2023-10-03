@@ -10,21 +10,21 @@
         h1{
             color: #302F2F;
             font-family: 'Montserrat', sans-serif;
-            font-size: 70px;
+            font-size: 5vw;
             font-weight: 600;
             position: relative;
     
             #changing-word {
                 color: #5330C1;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 150px;
+                font-size: 10vw;
                 font-weight: 900;
                 text-transform: uppercase;
                 display: inline-block;
 
                 span{ 
                     position: absolute;
-                    top: 3rem;
+                    top: 4vw;
                     left: 0;
                     overflow: hidden;
                     animation: fade 10s linear infinite;
@@ -50,7 +50,6 @@
                             opacity: 0;
                             transform: translateY(50px);
                         }
-                        
                         
                         100% {
                             opacity: 0;
@@ -89,9 +88,10 @@
         p{
             position: relative;
             top: 10rem;
+            width: 550px;
 
             color: #302F2F;
-            font-family: 'Montserrat Alternates', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 24px;
             font-style: normal;
             font-weight: 300;
@@ -99,6 +99,60 @@
             margin-top: 2rem;
         }
     } 
+
+    @media screen and (max-width: 769px) {
+        .claim{
+            margin-left:1rem;
+
+            h1{
+                font-size: 6vw ;
+
+                #changing-word{
+                    font-size:12vw ;
+
+                    span{
+                        
+
+                        @keyframes fade {
+                            0% {
+                            opacity: 0;
+                            transform: translateY(-16px);
+                            }
+    
+                            2% {
+                                opacity: 1;
+                                transform: translateY(0px);
+                            }
+    
+                            18% {
+                                opacity: 1;
+                                transform: translateY(0px);
+                            }
+    
+                            20% {
+                                opacity: 0;
+                                transform: translateY(16px);
+                            }
+                            
+                            100% {
+                                opacity: 0;
+                                transform: translateY(16px);
+                            }
+                        } 
+                    }
+                }
+            }
+
+            .dots-img{
+                width: 2.5rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                width: 85%;
+            }
+        }
+    }
 }
 
 #portfolio{
@@ -121,6 +175,15 @@
             }
         }
     }
+
+    @media screen and (max-width: 769px){
+        height: 100vh;
+        
+        img{
+            width: 95%;
+            margin:0.125rem 0.25rem;    
+        }
+    }
 }
 
 #quienesSomos{
@@ -133,9 +196,11 @@
         margin-bottom: 2.5rem;
 
         color: #302F2F;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 70px;
         font-weight: 600;
+
+        width: 65%;
 
         span{
             color: #5330C1;
@@ -145,15 +210,15 @@
     div{
 
         position: absolute;
-        right: 10rem;
+        right: 5rem;
         text-align: right;
 
         .quote2{
-            margin: 2.5rem 0;
+            margin: 2.5rem 0 2.5rem 50rem;
             color: #302F2F;
-            font-family: 'Montserrat Alternates', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 28px;
-            font-weight: 300;
+            font-weight: 300; 
         }
 
         .btn-conocenos{
@@ -173,14 +238,33 @@
                         transform: scale(0.95);
                     }
                 }   
-            }
-            
+            } 
         }
     }
-    
+
+    @media screen and (max-width: 769px){
+        .quote1{
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+
+        div{
+            right: 1rem;
+
+            .dots-img{
+                width: 2.5rem;
+            }
+
+            .quote2{
+                font-size: 1rem;
+                margin-left: 5rem;
+            }
+        }
+    }
 }
 
 #queHacemos{
+    display: none;
     padding-top: 6rem;
     height: calc(300vh - 6rem);
     background-color: #F5F5F5;
@@ -313,6 +397,7 @@
 }
 
 #stakeholders{
+    display: none;
     padding-top: 6rem;
     height: calc(100vh - 6rem);
     background-color: #F5F5F5;  
@@ -322,7 +407,7 @@
         margin-bottom: 2.5rem;
 
         color: #302F2F;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 70px;
         font-weight: 600;
 
@@ -339,7 +424,7 @@
     p{     
         margin: 2rem 0 3rem 5rem;
         color: #302F2F;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         font-weight: 500;
     }
