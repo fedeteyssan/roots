@@ -1,5 +1,5 @@
 #servicios{
-    padding-top: 8rem;
+    padding: 8rem 0 4rem 0;
     background-color: #F5F5F5;
 
     .claim{
@@ -53,24 +53,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 620px;
+                width: 330px;
                 height: 330px;
-                border-radius: 40px;
-                border: 1px solid #000;
+                border-radius: 500px;
+                border: 1px solid #6243C3;
                 background: #6243C3;
                 position: relative;
                 z-index: 1;
-            }
-        
-            .shadow{
-                width: 620px;
-                height: 330px;
-                border-radius: 40px;
-                background: #212222;
-    
-                position: absolute;
-                top: 10%;
-                left: -1.5%;
             }
         }
 
@@ -103,15 +92,11 @@
                     height: 50px;
                     border-radius: 20px;
                     border: 2px solid #000;
-                    box-shadow: -4px 1px 5px 0px #2C1D58;
                     text-align: center;
                     line-height: 3.25rem;
                     margin-right: 1rem;
+                    padding: 0 0.5rem;
                 }
-            }
-
-            .group2{
-                margin-left: 8rem;
             }
 
             .service-description{
