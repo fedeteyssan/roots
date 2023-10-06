@@ -15,6 +15,9 @@
     <!--Fontawesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!--Splide js-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     <title>Home</title>
 </head>
 
@@ -333,8 +336,6 @@
             </div>
         </div>
 
-
-
     </section>
 
     <footer id="footer">
@@ -369,6 +370,15 @@
 
     <!-- jQuery Tilt JS -->
     <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+    <!-- Splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide(  '.splide', {
+            type    : 'loop',
+            autoplay: 'play',
+        }).mount();
+    </script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

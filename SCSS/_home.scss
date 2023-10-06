@@ -265,8 +265,8 @@
 
 #queHacemos{
     //display: none;
-    padding-top: 6rem;
-    height: calc(300vh - 6rem);
+    padding: 6rem 0 4rem 0;
+    
     background-color: #F5F5F5;
 
     h2{
@@ -439,7 +439,7 @@
         margin-top: 10rem;
         overflow: hidden;
         white-space: nowrap;
-        background-color: #FFFEFE;
+
         padding: 2rem 0;
  
         .logo-slide{
