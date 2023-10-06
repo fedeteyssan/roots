@@ -1,8 +1,7 @@
 footer{
-    display: none;
-    padding-top: 6rem;
-    height: 20vh;
-    background-color: #F5F5F5;  
+    //display: none;
+    padding:4rem;
+    background-color: #302F2F;  
 
     .dots-img{
         margin-left: 5rem;
@@ -17,7 +16,7 @@ footer{
         margin-left: 5rem;
 
         h3{
-            color: #302F2F;
+            color: #fff;
             font-family: 'Montserrat', sans-serif;
             font-size: 50px;
             font-weight: 600;
@@ -34,11 +33,12 @@ footer{
 
             a{
                 text-decoration: none;
-                color: black;
+                color: #fff;
                 margin-right: 1rem;
             }
 
             p{
+                color:#fff;
                 margin-right: 2rem;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 18px;

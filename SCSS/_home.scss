@@ -157,7 +157,7 @@
 
 #portfolio{
     height: 300vh;
-    background-color: #F5F5F5;
+    background-color: #2F2C2C;
     perspective: 1000px;
     overflow: hidden;
 
@@ -171,7 +171,7 @@
             transform-style: preserve-3d;
 
             img{
-                margin:0.25rem 0.5rem;    
+                margin:0.5rem 0.5rem;    
             }
         }
     }
@@ -189,7 +189,7 @@
 #quienesSomos{
     padding-top: 6rem;
     height: calc(100vh - 6rem);
-    background-color: #F5F5F5;
+    background-color: #C1C1C1;
 
     .quote1{
         margin-left: 5rem;
@@ -264,7 +264,7 @@
 }
 
 #queHacemos{
-    display: none;
+    //display: none;
     padding-top: 6rem;
     height: calc(300vh - 6rem);
     background-color: #F5F5F5;
@@ -304,24 +304,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 620px;
+                width: 330px;
                 height: 330px;
-                border-radius: 40px;
-                border: 1px solid #000;
+                border-radius: 500px;
+                border: 1px solid #6243C3;
                 background: #6243C3;
                 position: relative;
                 z-index: 1;
-            }
-        
-            .shadow{
-                width: 620px;
-                height: 330px;
-                border-radius: 40px;
-                background: #212222;
-    
-                position: absolute;
-                top: 10%;
-                left: -1.5%;
             }
         }
 
@@ -361,10 +350,6 @@
                 }
             }
 
-            .group2{
-                margin-left: 8rem;
-            }
-
             .service-description{
                 margin-top: 2rem;
                 margin-bottom: 1rem;
@@ -397,10 +382,9 @@
 }
 
 #stakeholders{
-    display: none;
-    padding-top: 6rem;
-    height: calc(100vh - 6rem);
-    background-color: #F5F5F5;  
+    //display: none;
+    padding: 6rem 0 4rem 0;
+    background-color: #C1C1C1;  
     
     h2{
         margin-left: 5rem;
@@ -455,6 +439,18 @@
         margin-top: 10rem;
         overflow: hidden;
         white-space: nowrap;
+        background-color: #FFFEFE;
+        padding: 2rem 0;
+ 
+        .logo-slide{
+            display: inline-block;
+            animation: 35s slide infinite linear;
+    
+            img{
+                height: 50px;
+                margin: 0 40px;
+            }
+        }
 
         @keyframes slide {
             from{
@@ -465,16 +461,30 @@
             }
         }
 
-        .logo-slide{
+        .logo-slide2{
             display: inline-block;
-            animation: 35s slide infinite linear;
+            animation: 35s slide2 infinite linear;
     
             img{
                 height: 50px;
                 margin: 0 40px;
             }
         }
-    }  
+
+        @keyframes slide2 {
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(0%);
+            }
+        }
+    } 
+    
+    .logos2{
+        margin-top: 2rem;
+        
+    }
 }
 
 
