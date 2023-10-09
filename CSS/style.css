@@ -699,6 +699,19 @@ footer div .social-logos p {
 }
 #servicios .card-container .image-container {
   margin-right: 2rem;
+  /*animation: float 6s ease-in-out infinite;
+
+  @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-20px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+  }*/
 }
 #servicios .card-container .image-container .background {
   display: flex;
@@ -783,8 +796,9 @@ footer div .social-logos p {
 #activaciones .headline p {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  width: 50%;
 }
 #activaciones .categories-container {
   margin-top: 5rem;
@@ -835,10 +849,11 @@ footer div .social-logos p {
 #activaciones .categories-container .categories .categories-images-container .categories-cards span {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 5px;
   background: #FFF;
+  text-align: center;
   position: absolute;
   top: 85%;
   left: 50%;
@@ -870,8 +885,9 @@ footer div .social-logos p {
 #eventos .headline p {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  width: 50%;
 }
 #eventos .categories-container {
   margin-top: 5rem;
@@ -922,10 +938,11 @@ footer div .social-logos p {
 #eventos .categories-container .categories .categories-images-container .categories-cards span {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 5px;
   background: #FFF;
+  text-align: center;
   position: absolute;
   top: 85%;
   left: 50%;
@@ -961,8 +978,9 @@ footer div .social-logos p {
 #creatividad .headline p {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  width: 50%;
 }
 #creatividad .categories-container {
   margin-top: 5rem;
@@ -1001,7 +1019,7 @@ footer div .social-logos p {
   filter: grayscale(100%);
 }
 #creatividad .categories-container .categories .categories-images-container .categories-cards:hover {
-  width: 345px;
+  width: 340px;
   filter: grayscale(0%);
 }
 #creatividad .categories-container .categories .categories-images-container .categories-cards:hover span {
@@ -1013,12 +1031,58 @@ footer div .social-logos p {
 #creatividad .categories-container .categories .categories-images-container .categories-cards span {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 5px;
   background: #FFF;
+  text-align: center;
   position: absolute;
   top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 0;
+}
+#creatividad .categories-container .categories .categories-images-container .cards2:hover {
+  width: 320px;
+  filter: grayscale(0%);
+}
+#creatividad .categories-container .categories .categories-videos-container {
+  width: 90%;
+  display: flex;
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+#creatividad .categories-container .categories .categories-videos-container .categories-cards {
+  position: relative;
+  height: 300px;
+  transition: 0.8 ease;
+  filter: grayscale(100%);
+}
+#creatividad .categories-container .categories .categories-videos-container .categories-cards:hover {
+  width: 200px;
+  filter: grayscale(0%);
+}
+#creatividad .categories-container .categories .categories-videos-container .categories-cards:hover span {
+  opacity: 1;
+}
+#creatividad .categories-container .categories .categories-videos-container .categories-cards video {
+  height: 100%;
+  margin: 0 0.125rem;
+}
+#creatividad .categories-container .categories .categories-videos-container .categories-cards span {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #FFF;
+  text-align: center;
+  position: absolute;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   padding: 0.5rem 0.75rem;
@@ -1044,8 +1108,9 @@ footer div .social-logos p {
 #digital .headline p {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+  width: 50%;
 }
 #digital .categories-container {
   margin-top: 5rem;
@@ -1084,7 +1149,7 @@ footer div .social-logos p {
   filter: grayscale(100%);
 }
 #digital .categories-container .categories .categories-images-container .categories-cards:hover {
-  width: 345px;
+  width: 50px;
   filter: grayscale(0%);
 }
 #digital .categories-container .categories .categories-images-container .categories-cards:hover span {
@@ -1096,10 +1161,11 @@ footer div .social-logos p {
 #digital .categories-container .categories .categories-images-container .categories-cards span {
   color: #000;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   border-radius: 5px;
   background: #FFF;
+  text-align: center;
   position: absolute;
   top: 85%;
   left: 50%;
@@ -1108,4 +1174,54 @@ footer div .social-logos p {
   width: -moz-fit-content;
   width: fit-content;
   opacity: 0;
+}
+#digital .categories-container .categories .categories-images-container .cards2:hover {
+  width: 150px;
+  filter: grayscale(0%);
+}
+#digital .categories-container .categories .categories-images-container .cards2 .span2 {
+  top: 60%;
+}
+#digital .categories-container .categories .categories-videos-container {
+  width: 80%;
+  display: flex;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+#digital .categories-container .categories .categories-videos-container .categories-cards {
+  position: relative;
+  height: 300px;
+  transition: 0.8 ease;
+  filter: grayscale(100%);
+}
+#digital .categories-container .categories .categories-videos-container .categories-cards:hover {
+  filter: grayscale(0%);
+}
+#digital .categories-container .categories .categories-videos-container .categories-cards:hover span {
+  opacity: 1;
+}
+#digital .categories-container .categories .categories-videos-container .categories-cards video {
+  height: 100%;
+  margin: 0 0.125rem;
+}
+#digital .categories-container .categories .categories-videos-container .categories-cards span {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #FFF;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 0;
+}
+#digital .categories-container .categories .video2 {
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */
