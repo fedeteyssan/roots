@@ -94,6 +94,13 @@
                         opacity:0; 
                     }
                 }
+
+                .card2{
+                    &:hover{
+                        width: 280px;
+                        filter: grayscale(0%); 
+                    }
+                }
             }
         }
     }     

@@ -1,8 +1,3 @@
-//Loading
-window.onload = function() {
-  document.getElementById("loading").style.display = "none";
-}
-
 //Navbar responsive
 function responsiveNav() {
   var x = document.getElementById("my-nav");

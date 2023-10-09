@@ -1,0 +1,100 @@
+#creatividad
+{   padding-top: 8rem;
+    background-color: #F5F5F5;
+
+    .headline{
+        margin-left: 5rem;
+
+        h2{
+            color: #5330C1;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 55px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: #302F2F;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    .categories-container{
+        margin-top: 5rem;
+        margin-left: 5rem;
+
+        .categories{
+            
+            .categories-title{
+                color: #302F2F;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+
+                width: 195px;
+                height: 50px;
+                border-radius: 20px;
+                border: 1px solid #000;
+                box-shadow: -4px 1px 5px 0px #2C1D58;
+
+                text-align: center;
+                line-height: 3.25rem;
+                margin-right: 1rem;
+            }
+
+            .categories-images-container{
+                width:80%;
+                display: flex;
+                margin-top: 1rem;
+                padding-bottom: 5rem;
+                overflow: hidden;
+
+                .categories-cards{
+                    position: relative;
+                    height: 300px;
+
+                    width: 0px;
+                    flex-grow: 1;
+                    object-fit: cover;
+                    transition: 0.8 ease;
+                    filter: grayscale(100%); 
+                    
+                    &:hover{
+                        width: 345px;
+                        filter: grayscale(0%); 
+                    }
+                                        
+                    &:hover span{
+                        opacity:1;
+                    }
+
+                    img{
+                        height: 100%;
+                    }
+
+                    span{
+                        color: #000;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 15px;
+                        font-weight: 500;
+                        border-radius: 5px;
+                        background: #FFF;
+    
+                        position: absolute;
+                        top: 85%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        
+                        padding: 0.5rem 0.75rem;
+    
+                        width: fit-content;
+    
+                        opacity:0; 
+                    }
+                }
+            }
+        }
+    }     
+}
