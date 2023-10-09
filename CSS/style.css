@@ -252,7 +252,7 @@ footer div .social-logos p {
 }
 
 #portfolio {
-  height: 375vh;
+  height: 370vh;
   background-color: #2F2C2C;
   perspective: 1000px;
   overflow: hidden;
@@ -269,19 +269,32 @@ footer div .social-logos p {
 #portfolio .grid-container .column img {
   margin: 0.5rem 0.5rem;
 }
+#portfolio .grid-container .column video {
+  width: 97.5%;
+  margin: 0.5rem 0.5rem;
+}
+#portfolio .grid-container .column2 {
+  padding-top: 2.5rem;
+}
 @media screen and (max-width: 769px) {
   #portfolio {
-    height: 100vh;
+    height: 1150px;
   }
   #portfolio img {
     width: 95%;
-    margin: 0.125rem 0.25rem;
+    margin: 0.125rem 0.125rem;
+  }
+  #portfolio video {
+    width: 95% !important;
+    margin: 0.125rem 0.125rem;
+  }
+  #portfolio .column2 {
+    padding-top: 5rem !important;
   }
 }
 
 #quienesSomos {
-  padding-top: 6rem;
-  height: calc(100vh - 6rem);
+  padding: 6rem 0;
   background-color: #C1C1C1;
 }
 #quienesSomos .quote1 {
@@ -289,7 +302,7 @@ footer div .social-logos p {
   margin-bottom: 2.5rem;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 70px;
+  font-size: 4.5vw;
   font-weight: 600;
   width: 65%;
 }
@@ -297,16 +310,22 @@ footer div .social-logos p {
   color: #5330C1;
 }
 #quienesSomos div {
-  position: absolute;
-  right: 5rem;
+  position: relative;
   text-align: right;
+  margin-right: 5rem;
 }
 #quienesSomos div .quote2 {
-  margin: 2.5rem 0 2.5rem 50rem;
+  position: relative;
+  left: 40%;
+  width: 60%;
+  margin: 2.5rem 0;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 1.85vw;
   font-weight: 300;
+}
+#quienesSomos div .btn-conocenos {
+  margin-right: 5rem;
 }
 #quienesSomos div .btn-conocenos img {
   animation: pulse 2s infinite;
@@ -328,14 +347,15 @@ footer div .social-logos p {
     font-size: 2rem;
   }
   #quienesSomos div {
-    right: 1rem;
+    margin-right: 1rem;
   }
   #quienesSomos div .dots-img {
     width: 2.5rem;
   }
   #quienesSomos div .quote2 {
-    font-size: 1rem;
-    margin-left: 5rem;
+    width: 65%;
+    left: 35%;
+    font-size: 1.2rem;
   }
 }
 
@@ -346,14 +366,14 @@ footer div .social-logos p {
 #queHacemos h2 {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 3.25vw;
   font-weight: 500;
   text-transform: uppercase;
   margin-left: 5rem;
 }
 #queHacemos h2 span {
   color: #5330C1;
-  font-size: 90px;
+  font-size: 6vw;
   font-weight: 700;
 }
 #queHacemos .card-container {
@@ -416,6 +436,8 @@ footer div .social-logos p {
 #queHacemos .card-container .text-container .service-description {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  width: 80%;
+  text-align: justify;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -433,6 +455,11 @@ footer div .social-logos p {
   }
   100% {
     transform: scale(0.95);
+  }
+}
+@media screen and (max-width: 769px) {
+  #queHacemos h2 {
+    margin-left: 1rem;
   }
 }
 
@@ -490,7 +517,7 @@ footer div .social-logos p {
   animation: 35s slide infinite linear;
 }
 #stakeholders .logos .logo-slide img {
-  height: 50px;
+  height: 100px;
   margin: 0 40px;
 }
 @keyframes slide {
@@ -506,7 +533,7 @@ footer div .social-logos p {
   animation: 35s slide2 infinite linear;
 }
 #stakeholders .logos .logo-slide2 img {
-  height: 50px;
+  height: 100px;
   margin: 0 40px;
 }
 @keyframes slide2 {
@@ -680,18 +707,23 @@ footer div .social-logos p {
 }
 #activaciones .categories-container .categories .categories-images-container .categories-cards {
   position: relative;
-  height: 320px;
+  height: 300px;
   width: 0px;
   flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.8 ease;
+  filter: grayscale(100%);
 }
 #activaciones .categories-container .categories .categories-images-container .categories-cards:hover {
-  width: 300px;
+  width: 345px;
+  filter: grayscale(0%);
 }
 #activaciones .categories-container .categories .categories-images-container .categories-cards:hover span {
   opacity: 1;
+}
+#activaciones .categories-container .categories .categories-images-container .categories-cards img {
+  height: 100%;
 }
 #activaciones .categories-container .categories .categories-images-container .categories-cards span {
   color: #000;
@@ -701,7 +733,7 @@ footer div .social-logos p {
   border-radius: 5px;
   background: #FFF;
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
   padding: 0.5rem 0.75rem;
@@ -756,9 +788,16 @@ footer div .social-logos p {
   margin-top: 1rem;
 }
 #nosotros #claims-container .img-container {
-  margin-top: 2rem;
+  margin: 2rem 1rem 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 #nosotros #claims-container .img-container .revealing-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
   animation: auto linear reveal both;
   animation-timeline: view();
   animation-range: entry 60% cover 50%;
@@ -768,6 +807,7 @@ footer div .social-logos p {
     opacity: 0;
     -webkit-clip-path: inset(0% 60% 0% 50%);
             clip-path: inset(0% 60% 0% 50%);
+    filter: grayscale(100%);
   }
   to {
     opacity: 1;
@@ -775,17 +815,21 @@ footer div .social-logos p {
             clip-path: inset(0% 0% 0% 0%);
   }
 }
+#nosotros #claims-container .img-container1 {
+  grid-template-columns: 1fr 1fr;
+}
 #nosotros #marcas {
-  margin-left: 5rem;
+  padding-bottom: 2rem;
 }
 #nosotros #marcas h2 {
   margin-bottom: 0px;
+  margin-left: 5rem;
 }
 #nosotros #marcas h2 span {
   color: #5330C1;
 }
 #nosotros #marcas .logos {
-  margin-top: 10rem;
+  margin-top: 5rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -802,6 +846,6 @@ footer div .social-logos p {
   animation: 35s slide infinite linear;
 }
 #nosotros #marcas .logos .logo-slide img {
-  height: 50px;
+  height: 100px;
   margin: 0 40px;
 }/*# sourceMappingURL=style.css.map */

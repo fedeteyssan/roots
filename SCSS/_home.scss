@@ -156,14 +156,14 @@
 }
 
 #portfolio{
-    height: 375vh;
+    height: 370vh;
     background-color: #2F2C2C;
     perspective: 1000px;
     overflow: hidden;
 
     .grid-container{
         display: flex;
-        justify-content: center;      
+        justify-content: center;   
 
         .column{
             display: flex;
@@ -173,22 +173,39 @@
             img{
                 margin:0.5rem 0.5rem;    
             }
+
+            video{
+                width: 97.5%;
+                margin:0.5rem 0.5rem; 
+            }
+        }
+
+        .column2{
+            padding-top: 2.5rem;
         }
     }
 
     @media screen and (max-width: 769px){
-        height: 100vh;
+        height: 1150px;
         
         img{
             width: 95%;
-            margin:0.125rem 0.25rem;    
+            margin:0.125rem 0.125rem;    
+        }
+
+        video{
+            width: 95% !important;
+            margin:0.125rem 0.125rem; 
+        }
+
+        .column2{
+            padding-top: 5rem !important;
         }
     }
 }
 
 #quienesSomos{
-    padding-top: 6rem;
-    height: calc(100vh - 6rem);
+    padding: 6rem 0;
     background-color: #C1C1C1;
 
     .quote1{
@@ -197,7 +214,7 @@
 
         color: #302F2F;
         font-family: 'Montserrat', sans-serif;
-        font-size: 70px;
+        font-size: 4.5vw;
         font-weight: 600;
 
         width: 65%;
@@ -208,20 +225,23 @@
     }
 
     div{
-
-        position: absolute;
-        right: 5rem;
+        position: relative;
         text-align: right;
+        margin-right: 5rem;
 
         .quote2{
-            margin: 2.5rem 0 2.5rem 50rem;
+            position: relative;
+            left: 40%;
+            width: 60%;
+            margin: 2.5rem 0;
             color: #302F2F;
             font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
+            font-size: 1.85vw;
             font-weight: 300; 
         }
 
         .btn-conocenos{
+            margin-right: 5rem;
 
             img{
                 animation: pulse 2s infinite;
@@ -249,22 +269,23 @@
         }
 
         div{
-            right: 1rem;
+            margin-right: 1rem;
 
             .dots-img{
                 width: 2.5rem;
             }
 
             .quote2{
-                font-size: 1rem;
-                margin-left: 5rem;
+                width: 65%;
+                left: 35%;
+                font-size: 1.2rem;
+
             }
         }
     }
 }
 
 #queHacemos{
-    //display: none;
     padding: 6rem 0 4rem 0;
     
     background-color: #F5F5F5;
@@ -272,7 +293,7 @@
     h2{
         color: #302F2F;
         font-family: 'Montserrat', sans-serif;
-        font-size: 50px;
+        font-size: 3.25vw;
         font-weight: 500;
         text-transform: uppercase;
 
@@ -280,7 +301,7 @@
 
         span{
             color: #5330C1;
-            font-size: 90px;
+            font-size: 6vw;
             font-weight: 700;
         }
     }
@@ -353,6 +374,8 @@
             .service-description{
                 margin-top: 2rem;
                 margin-bottom: 1rem;
+                width: 80%;
+                text-align: justify;
                 color: #302F2F;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 24px;
@@ -379,10 +402,16 @@
             }
         }
     }
+
+    @media screen and (max-width: 769px){
+        h2{
+            margin-left: 1rem;
+        }
+
+    }
 }
 
 #stakeholders{
-    //display: none;
     padding: 6rem 0 4rem 0;
     background-color: #C1C1C1;  
     
@@ -447,7 +476,7 @@
             animation: 35s slide infinite linear;
     
             img{
-                height: 50px;
+                height: 100px;
                 margin: 0 40px;
             }
         }
@@ -466,7 +495,7 @@
             animation: 35s slide2 infinite linear;
     
             img{
-                height: 50px;
+                height: 100px;
                 margin: 0 40px;
             }
         }
