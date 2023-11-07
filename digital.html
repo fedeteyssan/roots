@@ -15,6 +15,9 @@
     <!--Fontawesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!--Splide js-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -106,27 +109,43 @@
                 
                 <div class="categories-images-container">
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-rexona4.png" alt="">
+                        <img src="/Multimedia/Digital-Ala.jpg" alt="">
+                        <span>Ala</span>
+                    </div> 
+                    <div class="categories-cards">
+                        <img src="/Multimedia/Digital-LasMoras.jpg" alt="">
+                        <span>Los Intocables</span>
+                    </div>
+                    <div class="categories-cards">
+                        <img src="/Multimedia/digital-mdp.png" alt="">
+                        <span>Samsara</span>
+                    </div> 
+                    <div class="categories-cards">
+                        <img src="/Multimedia/Digital-Rexona4.png" alt="">
                         <span>Rexona</span>
                     </div> 
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-rexona5.png" alt="">
+                        <img src="/Multimedia/Digital-Kayak.png" alt="">
                         <span>Rexona</span>
                     </div> 
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-rexona6.png" alt="">
+                        <img src="/Multimedia/Digital-Rexona5.png" alt="">
                         <span>Rexona</span>
                     </div> 
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-cif.png" alt="">
+                        <img src="/Multimedia/Digital-Cif2.png" alt="">
                         <span>Cif</span>
                     </div> 
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-skip.png" alt="">
+                        <img src="/Multimedia/Digital-Skip.jpg" alt="">
                         <span>Skip</span>
                     </div> 
                     <div class="categories-cards">
-                        <img src="/Multimedia/digital-superTenedores.png" alt="">
+                        <img src="/Multimedia/Digital-Skip2.jpg" alt="">
+                        <span>Skip</span>
+                    </div> 
+                    <div class="categories-cards">
+                        <img src="/Multimedia/Digital-SuperTenedores.png" alt="">
                         <span>Super Tenedores</span>
                     </div> 
                 </div>
@@ -135,23 +154,53 @@
             <div class="categories">
                 <p class="categories-title">Banners</p>
 
-                <div class="categories-images-container">
-                    <div class="categories-cards cards2">
-                        <img src="/Multimedia/digital-rexona.png" alt="">
-                        <span class="span2">Rexona</span>
-                    </div> 
-                    <div class="categories-cards cards2">
-                        <img src="/Multimedia/digital-rexona2.png" alt="">
-                        <span class="span2">Rexona</span>
-                    </div> 
-                    <div class="categories-cards cards2">
-                        <img src="/Multimedia/digital-rexona3.png" alt="">
-                        <span class="span2">Rexona</span>
-                    </div> 
-                    <div class="categories-cards cards2">
-                        <img src="/Multimedia/digital-samsara.png" alt="">
-                        <span class="span2">Samsara</span>
-                    </div> 
+                <div class="slider-container-banners">
+
+                    <div class="splide">
+                        <div class="splide__slider">
+                            <div class="splide__track">
+                                <div class="splide__list">
+            
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona.png" alt="">
+                                    </div>
+
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona2.png" alt="">
+                                    </div>
+            
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona3.png" alt="">
+                                    </div>   
+                                    
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona6.png" alt="">
+                                    </div> 
+
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona8.png" alt="">
+                                    </div> 
+
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona9.png" alt="">
+                                    </div> 
+                                    
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona10.png" alt="">
+                                    </div> 
+
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona11.png" alt="">
+                                    </div> 
+
+                                    <div class="splide__slide">
+                                        <img src="/Multimedia/Digital-Rexona12.jpg" alt="">
+                                    </div> 
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
             </div>
 
@@ -187,6 +236,17 @@
 
     <!-- jQuery Tilt JS -->
     <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+    <!-- Splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide(  '.splide', {
+            type: 'loop',
+            autoplay: 'play',
+            arrows: false,
+            pagination: true,
+        }).mount();
+    </script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
