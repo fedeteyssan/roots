@@ -1,11 +1,16 @@
 #main{
-    padding-top: 8rem;
-    background-color: #F5F5F5;
-    height: 100vh;
+    padding-top: 4rem;
+    height: 85vh;
 
     .claim{
 
-        margin-left: 5rem;
+       video{
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 4rem;
+            left: 0;
+        }
 
         h1{
             color: #302F2F;
@@ -13,6 +18,9 @@
             font-size: 5vw;
             font-weight: 600;
             position: relative;
+            margin-left: 5rem;
+            margin-top: 5rem;
+            
     
             #changing-word {
                 color: #5330C1;
@@ -83,6 +91,7 @@
         .dots-img{
             position: relative;
             top: 10rem;
+            left: 5rem;
         }
 
         p{
@@ -97,15 +106,21 @@
             font-weight: 300;
     
             margin-top: 2rem;
+            margin-left: 5rem;
         }
     } 
 
     @media screen and (max-width: 769px) {
         .claim{
-            margin-left:1rem;
+
+            video{
+              display: none;
+
+            }
 
             h1{
                 font-size: 6vw ;
+                margin-left:1rem;
 
                 #changing-word{
                     font-size:12vw ;
@@ -145,18 +160,20 @@
 
             .dots-img{
                 width: 2.5rem;
+                left:1rem;
             }
 
             p{
                 font-size: 1.5rem;
                 width: 85%;
+                margin-left:1rem;
             }
         }
     }
 }
 
 #portfolio{
-    height: 370vh;
+    height: 430vh;
     background-color: #2F2C2C;
     perspective: 1000px;
     overflow: hidden;
@@ -181,7 +198,7 @@
         }
 
         .column2{
-            padding-top: 2.5rem;
+            padding-top: 0rem;
         }
     }
 
@@ -199,14 +216,16 @@
         }
 
         .column2{
-            padding-top: 5rem !important;
+            padding-top: 0rem !important;
         }
     }
 }
 
 #quienesSomos{
     padding: 6rem 0;
-    background-color: #C1C1C1;
+    background-image: url("/Multimedia/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
 
     .quote1{
         margin-left: 5rem;
@@ -287,22 +306,28 @@
 
 #queHacemos{
     padding: 6rem 0 4rem 0;
-    
-    background-color: #F5F5F5;
+    background-color: #121112;
 
     h2{
-        color: #302F2F;
+        color: #fff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 3.25vw;
-        font-weight: 500;
-        text-transform: uppercase;
-
-        margin-left: 5rem;
+        font-size: 4.25vw;
+        font-weight: 700;
+        margin-bottom: 10rem;
+        
+        margin-left: 8rem;
+        
 
         span{
-            color: #5330C1;
-            font-size: 6vw;
+            position: relative;
+            left: 350px;
+            line-height: 10px;
+            font-size: 5.85vw;
             font-weight: 700;
+        }
+
+        .span1{
+            color: #5330C1;
         }
     }
 
@@ -325,8 +350,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 330px;
-                height: 330px;
+                width: 250px;
+                height: 250px;
                 border-radius: 500px;
                 border: 1px solid #6243C3;
                 background: #6243C3;
@@ -338,12 +363,11 @@
         .text-container{
 
             h3{
-                color: #302F2F;
+                color: #fff;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 700;
-                text-transform: uppercase;
-
+              
                 @media screen and (max-width: 769px) {
                     margin-top: 6rem;
                 }
@@ -353,9 +377,9 @@
                 display: flex;
                 margin-top: 1rem;
 
-                color: #302F2F;
+                color: #fff;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 600;
                 text-transform: uppercase;
 
@@ -363,7 +387,7 @@
                     width: 195px;
                     height: 50px;
                     border-radius: 20px;
-                    border: 2px solid #000;
+                    border: 2px solid #fff;
                     text-align: center;
                     line-height: 3.25rem;
                     margin-right: 1rem;
@@ -376,9 +400,9 @@
                 margin-bottom: 1rem;
                 width: 80%;
                 text-align: justify;
-                color: #302F2F;
+                color: #fff;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 500;
             }
 
@@ -413,7 +437,10 @@
 
 #stakeholders{
     padding: 6rem 0 4rem 0;
-    background-color: #C1C1C1;  
+    background-image: url("/Multimedia/background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+
     
     h2{
         margin-left: 5rem;
@@ -474,11 +501,21 @@
         .logo-slide{
             display: inline-block;
             animation: 60s slide infinite linear;
-    
-            img{
+
+            .logo-background{
+                display: inline-block;
+                width: 200px;
                 height: 100px;
-                margin: 0 40px;
+                background-color: #ffff;
+                text-align: center;
+                margin: 0 10px;
+
+                img{
+                    height: 100px;
+                }
             }
+    
+           
         }
 
         @keyframes slide {
@@ -494,9 +531,18 @@
             display: inline-block;
             animation: 60s slide2 infinite linear;
     
-            img{
+            .logo-background{
+                display: inline-block;
+                width: 200px;
                 height: 100px;
-                margin: 0 40px;
+                background-color: #ffff;
+                text-align: center;
+                margin: 0 10px;
+
+                img{
+                    height: 100px;
+                   
+                }
             }
         }
 

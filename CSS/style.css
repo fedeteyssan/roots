@@ -82,7 +82,7 @@
 }
 
 footer {
-  padding: 4rem 0;
+  padding: 1.5rem 0;
   background-color: #302F2F;
 }
 footer .dots-img {
@@ -127,12 +127,15 @@ footer div .social-logos p {
 }
 
 #main {
-  padding-top: 8rem;
-  background-color: #F5F5F5;
-  height: 100vh;
+  padding-top: 4rem;
+  height: 85vh;
 }
-#main .claim {
-  margin-left: 5rem;
+#main .claim video {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 4rem;
+  left: 0;
 }
 #main .claim h1 {
   color: #302F2F;
@@ -140,6 +143,8 @@ footer div .social-logos p {
   font-size: 5vw;
   font-weight: 600;
   position: relative;
+  margin-left: 5rem;
+  margin-top: 5rem;
 }
 #main .claim h1 #changing-word {
   color: #5330C1;
@@ -197,6 +202,7 @@ footer div .social-logos p {
 #main .claim .dots-img {
   position: relative;
   top: 10rem;
+  left: 5rem;
 }
 #main .claim p {
   position: relative;
@@ -208,13 +214,15 @@ footer div .social-logos p {
   font-style: normal;
   font-weight: 300;
   margin-top: 2rem;
+  margin-left: 5rem;
 }
 @media screen and (max-width: 769px) {
-  #main .claim {
-    margin-left: 1rem;
+  #main .claim video {
+    display: none;
   }
   #main .claim h1 {
     font-size: 6vw;
+    margin-left: 1rem;
   }
   #main .claim h1 #changing-word {
     font-size: 12vw;
@@ -243,15 +251,17 @@ footer div .social-logos p {
   }
   #main .claim .dots-img {
     width: 2.5rem;
+    left: 1rem;
   }
   #main .claim p {
     font-size: 1.5rem;
     width: 85%;
+    margin-left: 1rem;
   }
 }
 
 #portfolio {
-  height: 370vh;
+  height: 430vh;
   background-color: #2F2C2C;
   perspective: 1000px;
   overflow: hidden;
@@ -273,7 +283,7 @@ footer div .social-logos p {
   margin: 0.5rem 0.5rem;
 }
 #portfolio .grid-container .column2 {
-  padding-top: 2.5rem;
+  padding-top: 0rem;
 }
 @media screen and (max-width: 769px) {
   #portfolio {
@@ -288,13 +298,15 @@ footer div .social-logos p {
     margin: 0.125rem 0.125rem;
   }
   #portfolio .column2 {
-    padding-top: 5rem !important;
+    padding-top: 0rem !important;
   }
 }
 
 #quienesSomos {
   padding: 6rem 0;
-  background-color: #C1C1C1;
+  background-image: url("/Multimedia/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #quienesSomos .quote1 {
   margin-left: 5rem;
@@ -360,20 +372,25 @@ footer div .social-logos p {
 
 #queHacemos {
   padding: 6rem 0 4rem 0;
-  background-color: #F5F5F5;
+  background-color: #121112;
 }
 #queHacemos h2 {
-  color: #302F2F;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 3.25vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-left: 5rem;
+  font-size: 4.25vw;
+  font-weight: 700;
+  margin-bottom: 10rem;
+  margin-left: 8rem;
 }
 #queHacemos h2 span {
-  color: #5330C1;
-  font-size: 6vw;
+  position: relative;
+  left: 350px;
+  line-height: 10px;
+  font-size: 5.85vw;
   font-weight: 700;
+}
+#queHacemos h2 .span1 {
+  color: #5330C1;
 }
 #queHacemos .card-container {
   margin-left: 5rem;
@@ -393,8 +410,8 @@ footer div .social-logos p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 330px;
-  height: 330px;
+  width: 250px;
+  height: 250px;
   border-radius: 500px;
   border: 1px solid #6243C3;
   background: #6243C3;
@@ -402,11 +419,10 @@ footer div .social-logos p {
   z-index: 1;
 }
 #queHacemos .card-container .text-container h3 {
-  color: #302F2F;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 @media screen and (max-width: 769px) {
   #queHacemos .card-container .text-container h3 {
@@ -416,9 +432,9 @@ footer div .social-logos p {
 #queHacemos .card-container .text-container .group {
   display: flex;
   margin-top: 1rem;
-  color: #302F2F;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -426,7 +442,7 @@ footer div .social-logos p {
   width: 195px;
   height: 50px;
   border-radius: 20px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   text-align: center;
   line-height: 3.25rem;
   margin-right: 1rem;
@@ -437,9 +453,9 @@ footer div .social-logos p {
   margin-bottom: 1rem;
   width: 80%;
   text-align: justify;
-  color: #302F2F;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
 }
 #queHacemos .card-container .text-container .Btn-verMas img {
@@ -464,7 +480,9 @@ footer div .social-logos p {
 
 #stakeholders {
   padding: 6rem 0 4rem 0;
-  background-color: #C1C1C1;
+  background-image: url("/Multimedia/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #stakeholders h2 {
   margin-left: 5rem;
@@ -515,9 +533,16 @@ footer div .social-logos p {
   display: inline-block;
   animation: 60s slide infinite linear;
 }
-#stakeholders .logos .logo-slide img {
+#stakeholders .logos .logo-slide .logo-background {
+  display: inline-block;
+  width: 200px;
   height: 100px;
-  margin: 0 40px;
+  background-color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+#stakeholders .logos .logo-slide .logo-background img {
+  height: 100px;
 }
 @keyframes slide {
   from {
@@ -531,9 +556,16 @@ footer div .social-logos p {
   display: inline-block;
   animation: 60s slide2 infinite linear;
 }
-#stakeholders .logos .logo-slide2 img {
+#stakeholders .logos .logo-slide2 .logo-background {
+  display: inline-block;
+  width: 200px;
   height: 100px;
-  margin: 0 40px;
+  background-color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+#stakeholders .logos .logo-slide2 .logo-background img {
+  height: 100px;
 }
 @keyframes slide2 {
   from {

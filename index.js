@@ -1,3 +1,4 @@
+
 //Navbar responsive
 function responsiveNav() {
   var x = document.getElementById("my-nav");
