@@ -108,6 +108,13 @@
             margin-top: 2rem;
             margin-left: 5rem;
         }
+
+        i{
+            position: absolute;
+            right: 10px;
+            top: 100px;
+            cursor: pointer;
+        }
     } 
 
     @media screen and (max-width: 769px) {
@@ -315,12 +322,12 @@
         font-weight: 700;
         margin-bottom: 10rem;
         
-        margin-left: 8rem;
+        padding-left: 15rem;
         
 
         span{
             position: relative;
-            left: 350px;
+            left: 390px;
             line-height: 10px;
             font-size: 5.85vw;
             font-weight: 700;
@@ -332,7 +339,7 @@
     }
 
     .card-container{
-        margin-left: 5rem;
+        padding-left: 14rem;
         margin-top: 5rem;
         position: relative;
 
@@ -384,7 +391,7 @@
                 text-transform: uppercase;
 
                 .categories-title{
-                    width: 195px;
+                    width: 150px;
                     height: 50px;
                     border-radius: 20px;
                     border: 2px solid #fff;
@@ -398,7 +405,7 @@
             .service-description{
                 margin-top: 2rem;
                 margin-bottom: 1rem;
-                width: 80%;
+                width: 70%;
                 text-align: justify;
                 color: #fff;
                 font-family: 'Montserrat', sans-serif;
@@ -456,17 +463,31 @@
         }
     }
 
-    .dots-img{
+    .slider-container-quotes{
+        margin-top: 2rem;
         margin-left: 5rem;
-    }
- 
-
-    p{     
-        margin: 2rem 0 3rem 5rem;
-        color: #302F2F;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 500;
+      
+        .quote{
+            width:70vw;
+            color: white;
+            text-align: center;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            p{
+                width: 80%;
+                color: #302F2F;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                text-align: justify;
+    
+                span{
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
     .btn-conocenos{
@@ -513,9 +534,7 @@
                 img{
                     height: 100px;
                 }
-            }
-    
-           
+            } 
         }
 
         @keyframes slide {
@@ -540,8 +559,7 @@
                 margin: 0 10px;
 
                 img{
-                    height: 100px;
-                   
+                    height: 100px; 
                 }
             }
         }
@@ -557,8 +575,7 @@
     } 
     
     .logos2{
-        margin-top: 2rem;
-        
+        margin-top: 2rem; 
     }
 }
 

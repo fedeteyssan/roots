@@ -18,6 +18,15 @@ btnContacto.addEventListener('click', () => contacto.scrollIntoView({
   behavior: 'smooth',
 }));
 
+let video = document.getElementById('background-video');
+let button = document.getElementById('toggle-music');
+
+function toggleMute() {
+    video.muted = !video.muted;
+}
+
+button.addEventListener('click', toggleMute);
+
 
 //Column speed
 window.addEventListener('scroll', function() {

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 .topnav {
@@ -121,9 +122,29 @@ footer div .social-logos p {
   font-weight: 600;
 }
 
-.slider-container {
+.slider-container-quotes-test {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
+}
+.slider-container-quotes-test .quote {
+  width: 500px;
+  height: 500px;
+  color: white;
+  text-align: center;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container-quotes-test .quote p {
+  width: 80%;
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.slider-container-quotes-test .quote p span {
+  font-weight: 500;
 }
 
 #main {
@@ -215,6 +236,12 @@ footer div .social-logos p {
   font-weight: 300;
   margin-top: 2rem;
   margin-left: 5rem;
+}
+#main .claim i {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  cursor: pointer;
 }
 @media screen and (max-width: 769px) {
   #main .claim video {
@@ -380,11 +407,11 @@ footer div .social-logos p {
   font-size: 4.25vw;
   font-weight: 700;
   margin-bottom: 10rem;
-  margin-left: 8rem;
+  padding-left: 15rem;
 }
 #queHacemos h2 span {
   position: relative;
-  left: 350px;
+  left: 390px;
   line-height: 10px;
   font-size: 5.85vw;
   font-weight: 700;
@@ -393,7 +420,7 @@ footer div .social-logos p {
   color: #5330C1;
 }
 #queHacemos .card-container {
-  margin-left: 5rem;
+  padding-left: 14rem;
   margin-top: 5rem;
   position: relative;
   display: flex;
@@ -439,7 +466,7 @@ footer div .social-logos p {
   text-transform: uppercase;
 }
 #queHacemos .card-container .text-container .group .categories-title {
-  width: 195px;
+  width: 150px;
   height: 50px;
   border-radius: 20px;
   border: 2px solid #fff;
@@ -451,7 +478,7 @@ footer div .social-logos p {
 #queHacemos .card-container .text-container .service-description {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  width: 80%;
+  width: 70%;
   text-align: justify;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -495,14 +522,26 @@ footer div .social-logos p {
 #stakeholders h2 span {
   color: #5330C1;
 }
-#stakeholders .dots-img {
+#stakeholders .slider-container-quotes {
+  margin-top: 2rem;
   margin-left: 5rem;
 }
-#stakeholders p {
-  margin: 2rem 0 3rem 5rem;
+#stakeholders .slider-container-quotes .quote {
+  width: 70vw;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stakeholders .slider-container-quotes .quote p {
+  width: 80%;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
+  text-align: justify;
+}
+#stakeholders .slider-container-quotes .quote p span {
   font-weight: 500;
 }
 #stakeholders .btn-conocenos {
@@ -581,84 +620,62 @@ footer div .social-logos p {
 
 #nosotros {
   padding-top: 8rem;
-  background-color: #F5F5F5;
+  background-color: #000;
 }
-#nosotros h2 {
-  color: #302F2F;
+#nosotros .claim {
+  padding-bottom: 8rem;
+}
+#nosotros .claim h2 {
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  line-height: 80px;
 }
-#nosotros h3 {
+#nosotros .claim h2 span {
   color: #5330C1;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 2rem;
+  font-size: 90px;
+  font-weight: 900;
 }
-#nosotros p {
+#nosotros .chart-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+#nosotros .story {
+  background-image: url("/Multimedia/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#nosotros .story p {
+  padding-top: 3rem;
   color: #000;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
 }
-#nosotros #claims-container .claim {
-  margin-bottom: 10rem;
-}
-#nosotros #claims-container #claim1 h2 {
-  text-align: center;
-  line-height: 80px;
-}
-#nosotros #claims-container #claim1 h2 span {
-  color: #5330C1;
-  font-size: 90px;
-  font-weight: 900;
-}
-#nosotros #claims-container #claim1 p span {
-  font-weight: 900;
-}
-#nosotros #claims-container #claim3 p {
-  margin-top: 1rem;
-}
-#nosotros #claims-container .img-container {
-  margin: 2rem 1rem 0 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-}
-#nosotros #claims-container .img-container .revealing-image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 500px;
-  animation: auto linear reveal both;
-  animation-timeline: view();
-  animation-range: entry 60% cover 50%;
-}
-@keyframes reveal {
-  from {
-    opacity: 0;
-    -webkit-clip-path: inset(0% 60% 0% 50%);
-            clip-path: inset(0% 60% 0% 50%);
-    filter: grayscale(100%);
-  }
-  to {
-    opacity: 1;
-    -webkit-clip-path: inset(0% 0% 0% 0%);
-            clip-path: inset(0% 0% 0% 0%);
-  }
-}
-#nosotros #claims-container .img-container1 {
-  grid-template-columns: 1fr 1fr;
+#nosotros .slider-container {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  background-image: url("/Multimedia/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #nosotros #marcas {
-  padding-bottom: 2rem;
+  padding: 8rem 0 2rem 0;
+  background-color: #E6E6E6;
 }
 #nosotros #marcas h2 {
+  color: #302F2F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 2rem;
   margin-bottom: 0px;
   margin-left: 5rem;
 }
@@ -670,6 +687,21 @@ footer div .social-logos p {
   overflow: hidden;
   white-space: nowrap;
 }
+#nosotros #marcas .logos .logo-slide {
+  display: inline-block;
+  animation: 60s slide infinite linear;
+}
+#nosotros #marcas .logos .logo-slide .logo-background {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+#nosotros #marcas .logos .logo-slide .logo-background img {
+  height: 100px;
+}
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -678,13 +710,31 @@ footer div .social-logos p {
     transform: translateX(-100%);
   }
 }
-#nosotros #marcas .logos .logo-slide {
+#nosotros #marcas .logos .logo-slide2 {
   display: inline-block;
-  animation: 35s slide infinite linear;
+  animation: 60s slide2 infinite linear;
 }
-#nosotros #marcas .logos .logo-slide img {
+#nosotros #marcas .logos .logo-slide2 .logo-background {
+  display: inline-block;
+  width: 200px;
   height: 100px;
-  margin: 0 40px;
+  background-color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+#nosotros #marcas .logos .logo-slide2 .logo-background img {
+  height: 100px;
+}
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#nosotros #marcas .logos2 {
+  margin-top: 2rem;
 }
 
 #servicios {
@@ -711,7 +761,7 @@ footer div .social-logos p {
 }
 #servicios .claim p {
   color: #000;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 400;
   margin-top: 1rem;
 }
@@ -749,8 +799,8 @@ footer div .social-logos p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 330px;
-  height: 330px;
+  width: 250px;
+  height: 250px;
   border-radius: 500px;
   border: 1px solid #6243C3;
   background: #6243C3;
@@ -760,7 +810,7 @@ footer div .social-logos p {
 #servicios .card-container .text-container h3 {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -774,12 +824,12 @@ footer div .social-logos p {
   margin-top: 1rem;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 #servicios .card-container .text-container .group .categories-title {
-  width: 195px;
+  width: 150px;
   height: 50px;
   border-radius: 20px;
   border: 2px solid #000;
@@ -791,9 +841,11 @@ footer div .social-logos p {
 #servicios .card-container .text-container .service-description {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  width: 70%;
+  text-align: justify;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
 }
 #servicios .card-container .text-container .Btn-verMas img {
@@ -846,7 +898,6 @@ footer div .social-logos p {
   height: 50px;
   border-radius: 20px;
   border: 1px solid #000;
-  box-shadow: -4px 1px 5px 0px #2C1D58;
   text-align: center;
   line-height: 3.25rem;
   margin-right: 1rem;
@@ -935,7 +986,6 @@ footer div .social-logos p {
   height: 50px;
   border-radius: 20px;
   border: 1px solid #000;
-  box-shadow: -4px 1px 5px 0px #2C1D58;
   text-align: center;
   line-height: 3.25rem;
   margin-right: 1rem;
@@ -1028,7 +1078,6 @@ footer div .social-logos p {
   height: 50px;
   border-radius: 20px;
   border: 1px solid #000;
-  box-shadow: -4px 1px 5px 0px #2C1D58;
   text-align: center;
   line-height: 3.25rem;
   margin-right: 1rem;
@@ -1158,7 +1207,6 @@ footer div .social-logos p {
   height: 50px;
   border-radius: 20px;
   border: 1px solid #000;
-  box-shadow: -4px 1px 5px 0px #2C1D58;
   text-align: center;
   line-height: 3.25rem;
   margin-right: 1rem;

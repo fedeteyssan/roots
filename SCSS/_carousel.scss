@@ -1,5 +1,27 @@
-.slider-container{
+.slider-container-quotes-test{
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 
+    .quote{
+        width: 500px;
+        height: 500px;
+        color: white;
+        text-align: center;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            width: 80%;
+            color: #302F2F;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+
+            span{
+                font-weight: 500;
+            }
+        }
+    }
 }
