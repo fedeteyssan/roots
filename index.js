@@ -9,15 +9,7 @@ function responsiveNav() {
   }
 }
 
-
-//Botones links
-const btnContacto = document.getElementById('btn-contacto');
-const contacto = document.getElementById("footer")
-
-btnContacto.addEventListener('click', () => contacto.scrollIntoView({
-  behavior: 'smooth',
-}));
-
+//sonido Video
 let video = document.getElementById('background-video');
 let button = document.getElementById('toggle-music');
 

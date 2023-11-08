@@ -63,23 +63,27 @@
     margin-top: 1rem;
     margin-left: 1rem;
   }
-  .topnav ul a {
+  .topnav ul li {
+    height: 1.5rem;
+  }
+  .topnav ul li a {
     display: none;
   }
   .topnav .icon {
     display: block;
     position: absolute;
-    right: 3rem;
+    right: 2rem;
     top: 1.5rem;
   }
 }
 
 .responsive {
-  height: 8rem;
+  height: 4rem;
 }
 .responsive a {
   display: block !important;
   text-align: left !important;
+  font-size: 12px;
 }
 
 footer {
@@ -121,30 +125,49 @@ footer div .social-logos p {
   font-size: 18px;
   font-weight: 600;
 }
-
-.slider-container-quotes-test {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  footer div .social-logos-mobile {
+    display: none;
+  }
 }
-.slider-container-quotes-test .quote {
-  width: 500px;
-  height: 500px;
-  color: white;
-  text-align: center;
-  background-color: green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider-container-quotes-test .quote p {
-  width: 80%;
-  color: #302F2F;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-.slider-container-quotes-test .quote p span {
-  font-weight: 500;
+@media screen and (max-width: 769px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .dots-img {
+    width: 2.5rem;
+    margin-left: 0;
+  }
+  footer div {
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+  footer div h3 {
+    font-size: 18px;
+    line-height: 3rem;
+  }
+  footer div h3 span {
+    font-size: 20px;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .social-logos {
+    display: none;
+  }
+  footer .social-logos-mobile a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+  }
+  footer .social-logos-mobile p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 
 #main {
@@ -301,6 +324,7 @@ footer div .social-logos p {
   display: flex;
   flex-direction: column;
   transform-style: preserve-3d;
+  width: 33.33%;
 }
 #portfolio .grid-container .column img {
   margin: 0.5rem 0.5rem;
@@ -309,12 +333,9 @@ footer div .social-logos p {
   width: 97.5%;
   margin: 0.5rem 0.5rem;
 }
-#portfolio .grid-container .column2 {
-  padding-top: 0rem;
-}
 @media screen and (max-width: 769px) {
   #portfolio {
-    height: 1150px;
+    height: 850px;
   }
   #portfolio img {
     width: 95%;
@@ -621,6 +642,12 @@ footer div .social-logos p {
 #nosotros {
   padding-top: 8rem;
   background-color: #000;
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  #nosotros {
+    padding-top: 4rem;
+  }
 }
 #nosotros .claim {
   padding-bottom: 8rem;
@@ -640,34 +667,66 @@ footer div .social-logos p {
   font-size: 90px;
   font-weight: 900;
 }
+@media screen and (max-width: 769px) {
+  #nosotros .claim {
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 769px) and (max-width: 769px) {
+  #nosotros .claim h2 {
+    font-size: 18px;
+    margin-left: 1rem;
+    line-height: 2rem;
+  }
+  #nosotros .claim h2 span {
+    font-size: 24px;
+  }
+}
 #nosotros .chart-container {
   display: flex;
   justify-content: center;
   padding-bottom: 5rem;
 }
+@media screen and (max-width: 769px) {
+  #nosotros .chart-container {
+    display: none;
+  }
+}
+#nosotros .chart-container-mobile {
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+}
+#nosotros .chart-container-mobile img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #nosotros .chart-container-mobile {
+    display: none;
+  }
+}
 #nosotros .story {
   background-image: url("/Multimedia/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  display: flex;
+  justify-content: center;
 }
 #nosotros .story p {
-  padding-top: 3rem;
+  padding: 4rem 0;
   color: #000;
   text-align: center;
   font-size: 30px;
   font-weight: 400;
 }
-#nosotros .slider-container {
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  background-image: url("/Multimedia/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (max-width: 769px) {
+  #nosotros .story p {
+    padding: 3rem 0;
+    font-size: 16px;
+    margin: 0 1rem;
+  }
 }
 #nosotros #marcas {
-  padding: 8rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
   background-color: #E6E6E6;
 }
 #nosotros #marcas h2 {
@@ -735,6 +794,25 @@ footer div .social-logos p {
 }
 #nosotros #marcas .logos2 {
   margin-top: 2rem;
+}
+@media screen and (max-width: 769px) {
+  #nosotros #marcas {
+    padding: 2rem 0 1rem 0;
+  }
+  #nosotros #marcas h2 {
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  #nosotros #marcas .logos {
+    margin-top: 2rem;
+  }
+  #nosotros #marcas .logos .logo-background {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #nosotros #marcas .logos .logo-background img {
+    height: 50px !important;
+  }
 }
 
 #servicios {

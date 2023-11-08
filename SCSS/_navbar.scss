@@ -54,6 +54,7 @@
         flex-direction: column;
         height: 1rem;
 
+    
         .logo{
             padding-left: 1rem;
             width: 20%;
@@ -69,26 +70,31 @@
             margin-top: 1rem;
             margin-left: 1rem;
 
-            a{
-                display: none;
+            li{
+                height: 1.5rem;
+
+                a{
+                    display: none;
+                }
             }
-            
         } 
 
         .icon {
             display: block;
             position: absolute;
-            right: 3rem;
+            right: 2rem;
             top:1.5rem;
         }
     }
 }
 
 .responsive{
-    height: 8rem;
+    height: 4rem;
+
     a{
         display: block !important;
         text-align: left !important;
+        font-size: 12px;
     }
 }
 
