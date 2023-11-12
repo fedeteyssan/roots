@@ -27,6 +27,7 @@
             font-size: 22px;
             font-weight: 400;
             margin-top: 1rem;
+            width: 60%;
 
             span{
                 font-weight: 900;
@@ -35,15 +36,11 @@
     }
 
     .card-container{
-        margin-left: 5rem;
+        padding-left: 15vw;
         margin-top: 5rem;
         position: relative;
 
         display: flex;
-
-        @media screen and (max-width: 769px) {
-            flex-direction: column;
-        }
 
         .image-container{
 
@@ -61,41 +58,22 @@
                 position: relative;
                 z-index: 1;
             }
-
-            /*animation: float 6s ease-in-out infinite;
-
-            @keyframes float {
-                0% {
-                  transform: translatey(0px);
-                }
-                50% {
-                  transform: translatey(-20px);
-                }
-                100% {
-                  transform: translatey(0px);
-                }
-            }*/ 
         }
 
         .text-container{
 
             h3{
-                color: #302F2F;
+                color: #000;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 40px;
                 font-weight: 700;
-                text-transform: uppercase;
-
-                @media screen and (max-width: 769px) {
-                    margin-top: 6rem;
-                }
             }
 
             .group{
                 display: flex;
                 margin-top: 1rem;
 
-                color: #302F2F;
+                color: #000;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 16px;
                 font-weight: 600;
@@ -118,7 +96,7 @@
                 margin-bottom: 1rem;
                 width: 70%;
                 text-align: justify;
-                color: #302F2F;
+                color: #000;
                 font-family: 'Montserrat', sans-serif;
                 font-size: 22px;
                 font-weight: 500;
@@ -142,6 +120,87 @@
                     }   
                 }
             }
+        }
+    }
+
+    //Mobile
+    @media screen and (max-width: 769px){
+
+        padding-top: 4rem;
+        
+        .claim{
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+
+            h2{
+                padding-left: 0;
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+    
+                span{
+                    font-size: 2rem;
+                }
+            }
+
+            p{
+                font-size: 12px;
+                width: 95%;
+            }
+        }
+        
+        .card-container{
+            margin-top: 3rem;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: center;
+        
+            .image-container{
+
+                margin-right: 0;
+
+                .background{
+                    width: 150px;
+                    height: 150px;
+
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+
+            .text-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+
+                h3{
+                    font-size: 1.5rem;
+                }
+
+                .group{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 0.5rem;
+
+                    .categories-title{
+                        width: 100px;
+                        height: 25px;
+                        line-height: 25px;
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        margin: 0 0rem;
+                        padding: 0 0.25rem;
+                    }
+                }
+    
+                .service-description{
+                    font-size: 12px;  
+                    margin-top: 1rem;
+                }
+            } 
         }
     }
 }

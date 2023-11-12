@@ -72,15 +72,15 @@
   .topnav .icon {
     display: block;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 1.5rem;
   }
 }
 
 .responsive {
-  height: 4rem;
+  height: 5rem;
 }
-.responsive a {
+.responsive ul li a {
   display: block !important;
   text-align: left !important;
   font-size: 12px;
@@ -181,7 +181,7 @@ footer div .social-logos p {
   top: 4rem;
   left: 0;
 }
-#main .claim h1 {
+#main .claim .heading {
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
   font-size: 5vw;
@@ -190,7 +190,7 @@ footer div .social-logos p {
   margin-left: 5rem;
   margin-top: 5rem;
 }
-#main .claim h1 #changing-word {
+#main .claim .heading #changing-word {
   color: #5330C1;
   font-family: "Montserrat", sans-serif;
   font-size: 10vw;
@@ -198,7 +198,7 @@ footer div .social-logos p {
   text-transform: uppercase;
   display: inline-block;
 }
-#main .claim h1 #changing-word span {
+#main .claim .heading #changing-word span {
   position: absolute;
   top: 4vw;
   left: 0;
@@ -228,53 +228,54 @@ footer div .social-logos p {
     transform: translateY(50px);
   }
 }
-#main .claim h1 #changing-word span:nth-child(1) {
+#main .claim .heading #changing-word span:nth-child(1) {
   animation-delay: 0;
 }
-#main .claim h1 #changing-word span:nth-child(2) {
+#main .claim .heading #changing-word span:nth-child(2) {
   animation-delay: 2s;
 }
-#main .claim h1 #changing-word span:nth-child(3) {
+#main .claim .heading #changing-word span:nth-child(3) {
   animation-delay: 4s;
 }
-#main .claim h1 #changing-word span:nth-child(4) {
+#main .claim .heading #changing-word span:nth-child(4) {
   animation-delay: 6s;
 }
-#main .claim h1 #changing-word span:nth-child(5) {
+#main .claim .heading #changing-word span:nth-child(5) {
   animation-delay: 8s;
 }
-#main .claim .dots-img {
-  position: relative;
-  top: 10rem;
-  left: 5rem;
+#main .dots-img {
+  margin-top: 20vh;
+  margin-left: 5rem;
 }
-#main .claim p {
-  position: relative;
-  top: 10rem;
-  width: 550px;
+#main p {
+  width: 35%;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 300;
   margin-top: 2rem;
   margin-left: 5rem;
 }
-#main .claim i {
+#main i {
   position: absolute;
   right: 10px;
   top: 100px;
   cursor: pointer;
 }
 @media screen and (max-width: 769px) {
+  #main {
+    background-color: #EEEDED;
+    height: 60vh;
+  }
   #main .claim video {
     display: none;
   }
-  #main .claim h1 {
+  #main .claim .heading {
     font-size: 6vw;
     margin-left: 1rem;
   }
-  #main .claim h1 #changing-word {
+  #main .claim .heading #changing-word {
     font-size: 12vw;
   }
   @keyframes fade {
@@ -299,19 +300,20 @@ footer div .social-logos p {
       transform: translateY(16px);
     }
   }
-  #main .claim .dots-img {
+  #main .dots-img {
     width: 2.5rem;
-    left: 1rem;
+    margin-top: 5rem;
+    margin-left: 1rem;
   }
-  #main .claim p {
-    font-size: 1.5rem;
+  #main p {
+    font-size: 1.2rem;
     width: 85%;
     margin-left: 1rem;
   }
 }
 
 #portfolio {
-  height: 3000px;
+  height: 3100px;
   background-color: #2F2C2C;
   perspective: 1000px;
   overflow: hidden;
@@ -335,21 +337,17 @@ footer div .social-logos p {
 }
 @media screen and (max-width: 769px) {
   #portfolio {
-    height: 850px;
+    height: 650px;
   }
-  #portfolio img {
+  #portfolio .grid-container .column img {
     width: 95%;
     margin: 0.125rem 0.125rem;
   }
-  #portfolio video {
+  #portfolio .grid-container .column video {
     width: 95% !important;
     margin: 0.125rem 0.125rem;
   }
-  #portfolio .column2 {
-    padding-top: 0rem !important;
-  }
 }
-
 #quienesSomos {
   padding: 6rem 0;
   background-image: url("/Multimedia/background.png");
@@ -414,7 +412,7 @@ footer div .social-logos p {
   #quienesSomos div .quote2 {
     width: 65%;
     left: 35%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -432,7 +430,7 @@ footer div .social-logos p {
 }
 #queHacemos h2 span {
   position: relative;
-  left: 390px;
+  left: 30vw;
   line-height: 10px;
   font-size: 5.85vw;
   font-weight: 700;
@@ -441,15 +439,10 @@ footer div .social-logos p {
   color: #5330C1;
 }
 #queHacemos .card-container {
-  padding-left: 14rem;
+  padding-left: 15vw;
   margin-top: 5rem;
   position: relative;
   display: flex;
-}
-@media screen and (max-width: 769px) {
-  #queHacemos .card-container {
-    flex-direction: column;
-  }
 }
 #queHacemos .card-container .image-container {
   margin-right: 2rem;
@@ -471,11 +464,6 @@ footer div .social-logos p {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
-}
-@media screen and (max-width: 769px) {
-  #queHacemos .card-container .text-container h3 {
-    margin-top: 6rem;
-  }
 }
 #queHacemos .card-container .text-container .group {
   display: flex;
@@ -522,7 +510,61 @@ footer div .social-logos p {
 }
 @media screen and (max-width: 769px) {
   #queHacemos h2 {
-    margin-left: 1rem;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  #queHacemos h2 span {
+    left: 10vw;
+    font-size: 2rem;
+  }
+  #queHacemos .card-container {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #queHacemos .card-container .image-container {
+    margin-right: 0;
+  }
+  #queHacemos .card-container .image-container .background {
+    width: 150px;
+    height: 150px;
+  }
+  #queHacemos .card-container .image-container .background img {
+    width: 60%;
+  }
+  #queHacemos .card-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #queHacemos .card-container .text-container h3 {
+    font-size: 1.5rem;
+  }
+  #queHacemos .card-container .text-container .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  #queHacemos .card-container .text-container .group .categories-title {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0 0rem;
+    padding: 0 0.25rem;
+  }
+  #queHacemos .card-container .text-container .group1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+  }
+  #queHacemos .card-container .text-container .service-description {
+    font-size: 12px;
+    margin-top: 1rem;
   }
 }
 
@@ -537,7 +579,8 @@ footer div .social-logos p {
   margin-bottom: 2.5rem;
   color: #302F2F;
   font-family: "Montserrat", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
+  line-height: 60px;
   font-weight: 600;
 }
 #stakeholders h2 span {
@@ -587,7 +630,6 @@ footer div .social-logos p {
   margin-top: 10rem;
   overflow: hidden;
   white-space: nowrap;
-  padding: 2rem 0;
 }
 #stakeholders .logos .logo-slide {
   display: inline-block;
@@ -638,6 +680,37 @@ footer div .social-logos p {
 #stakeholders .logos2 {
   margin-top: 2rem;
 }
+@media screen and (max-width: 769px) {
+  #stakeholders h2 {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  #stakeholders .slider-container-quotes {
+    margin-left: 1rem;
+  }
+  #stakeholders .slider-container-quotes .quote {
+    width: 90%;
+  }
+  #stakeholders .slider-container-quotes .quote p {
+    font-size: 12px;
+  }
+  #stakeholders .btn-conocenos {
+    right: 5rem;
+  }
+  #stakeholders .logos {
+    margin-top: 2rem;
+  }
+  #stakeholders .logos .logo-background {
+    width: 100px !important;
+    height: 50px !important;
+  }
+  #stakeholders .logos .logo-background img {
+    height: 50px !important;
+  }
+  #stakeholders .logos1 {
+    margin-top: 6rem;
+  }
+}
 
 #nosotros {
   padding-top: 8rem;
@@ -674,12 +747,12 @@ footer div .social-logos p {
 }
 @media screen and (max-width: 769px) and (max-width: 769px) {
   #nosotros .claim h2 {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-left: 1rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   #nosotros .claim h2 span {
-    font-size: 24px;
+    font-size: 2rem;
   }
 }
 #nosotros .chart-container {
@@ -842,36 +915,19 @@ footer div .social-logos p {
   font-size: 22px;
   font-weight: 400;
   margin-top: 1rem;
+  width: 60%;
 }
 #servicios .claim p span {
   font-weight: 900;
 }
 #servicios .card-container {
-  margin-left: 5rem;
+  padding-left: 15vw;
   margin-top: 5rem;
   position: relative;
   display: flex;
 }
-@media screen and (max-width: 769px) {
-  #servicios .card-container {
-    flex-direction: column;
-  }
-}
 #servicios .card-container .image-container {
   margin-right: 2rem;
-  /*animation: float 6s ease-in-out infinite;
-
-  @keyframes float {
-      0% {
-        transform: translatey(0px);
-      }
-      50% {
-        transform: translatey(-20px);
-      }
-      100% {
-        transform: translatey(0px);
-      }
-  }*/
 }
 #servicios .card-container .image-container .background {
   display: flex;
@@ -886,21 +942,15 @@ footer div .social-logos p {
   z-index: 1;
 }
 #servicios .card-container .text-container h3 {
-  color: #302F2F;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 769px) {
-  #servicios .card-container .text-container h3 {
-    margin-top: 6rem;
-  }
 }
 #servicios .card-container .text-container .group {
   display: flex;
   margin-top: 1rem;
-  color: #302F2F;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -921,7 +971,7 @@ footer div .social-logos p {
   margin-bottom: 1rem;
   width: 70%;
   text-align: justify;
-  color: #302F2F;
+  color: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -938,6 +988,72 @@ footer div .social-logos p {
   }
   100% {
     transform: scale(0.95);
+  }
+}
+@media screen and (max-width: 769px) {
+  #servicios {
+    padding-top: 4rem;
+  }
+  #servicios .claim {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  #servicios .claim h2 {
+    padding-left: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  #servicios .claim h2 span {
+    font-size: 2rem;
+  }
+  #servicios .claim p {
+    font-size: 12px;
+    width: 95%;
+  }
+  #servicios .card-container {
+    margin-top: 3rem;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #servicios .card-container .image-container {
+    margin-right: 0;
+  }
+  #servicios .card-container .image-container .background {
+    width: 150px;
+    height: 150px;
+  }
+  #servicios .card-container .image-container .background img {
+    width: 60%;
+  }
+  #servicios .card-container .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  #servicios .card-container .text-container h3 {
+    font-size: 1.5rem;
+  }
+  #servicios .card-container .text-container .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  #servicios .card-container .text-container .group .categories-title {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0 0rem;
+    padding: 0 0.25rem;
+  }
+  #servicios .card-container .text-container .service-description {
+    font-size: 12px;
+    margin-top: 1rem;
   }
 }
 
