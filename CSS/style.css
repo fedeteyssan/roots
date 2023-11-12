@@ -1051,6 +1051,10 @@ footer div .social-logos p {
     margin: 0 0rem;
     padding: 0 0.25rem;
   }
+  #servicios .card-container .text-container .group1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+  }
   #servicios .card-container .text-container .service-description {
     font-size: 12px;
     margin-top: 1rem;
