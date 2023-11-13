@@ -1153,6 +1153,9 @@ footer div .social-logos p {
   width: 280px;
   filter: grayscale(0%);
 }
+#activaciones .categories-container .categories .categories-images-container-mobile {
+  display: none;
+}
 @media screen and (max-width: 769px) {
   #activaciones .headline {
     margin-left: 1rem;
@@ -1178,6 +1181,16 @@ footer div .social-logos p {
     align-items: center;
     width: 100%;
   }
+  #activaciones .categories-container .categories .categories-title {
+    font-size: 14px;
+    width: auto;
+    padding: 0 1rem;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    right: 45%;
+    transform: translateX(50%);
+  }
   #activaciones .categories-container .categories .categories-images-container {
     display: none;
   }
@@ -1185,7 +1198,7 @@ footer div .social-logos p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 1rem 1.5rem 1rem;
+    margin: 1rem 0rem 1.5rem 0rem;
     width: 90%;
   }
   #activaciones .categories-container .categories .categories-images-container-mobile .splide {
@@ -1306,6 +1319,81 @@ footer div .social-logos p {
 #eventos .categories-container .categories .categories-images-container .cards3:hover {
   width: 220px;
   filter: grayscale(0%);
+}
+#eventos .categories-container .categories .categories-images-container-mobile {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  #eventos .headline {
+    margin-left: 1rem;
+  }
+  #eventos .headline h2 {
+    font-size: 2rem;
+  }
+  #eventos .headline p {
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  #eventos .categories-container {
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #eventos .categories-container .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #eventos .categories-container .categories .categories-title {
+    font-size: 14px;
+    width: auto;
+    padding: 0 1rem;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    right: 45%;
+    transform: translateX(50%);
+  }
+  #eventos .categories-container .categories .categories-images-container {
+    display: none;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 90%;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile .splide {
+    width: 100%;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards img {
+    width: 100%;
+  }
+  #eventos .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 3rem;
+  }
 }
 
 #creatividad {
@@ -1435,6 +1523,84 @@ footer div .social-logos p {
   width: -moz-fit-content;
   width: fit-content;
   opacity: 0;
+}
+#creatividad .categories-container .categories .categories-images-container-mobile {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  #creatividad .headline {
+    margin-left: 1rem;
+  }
+  #creatividad .headline h2 {
+    font-size: 2rem;
+  }
+  #creatividad .headline p {
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  #creatividad .categories-container {
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #creatividad .categories-container .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-title {
+    font-size: 14px;
+    width: auto;
+    padding: 0 1rem;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    right: 45%;
+    transform: translateX(50%);
+  }
+  #creatividad .categories-container .categories .categories-images-container {
+    display: none;
+  }
+  #creatividad .categories-container .categories .categories-videos-container {
+    display: none;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 90%;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile .splide {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards img {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 3rem;
+  }
 }
 
 #digital {
@@ -1570,4 +1736,85 @@ footer div .social-logos p {
 }
 #digital .categories-container .categories .slider-container-banners img {
   width: 100%;
+}
+#digital .categories-container .categories .categories-images-container-mobile {
+  display: none;
+}
+@media screen and (max-width: 769px) {
+  #digital .headline {
+    margin-left: 1rem;
+  }
+  #digital .headline h2 {
+    font-size: 2rem;
+  }
+  #digital .headline p {
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  #digital .categories-container {
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #digital .categories-container .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-title {
+    font-size: 14px;
+    width: auto;
+    padding: 0 1rem;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    right: 45%;
+    transform: translateX(50%);
+  }
+  #digital .categories-container .categories .categories-images-container {
+    display: none;
+  }
+  #digital .categories-container .categories .categories-videos-container {
+    display: none;
+  }
+  #digital .categories-container .categories .categories-images-container {
+    display: none;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 90%;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile .splide {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards img {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
