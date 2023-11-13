@@ -1157,6 +1157,9 @@ footer div .social-logos p {
   display: none;
 }
 @media screen and (max-width: 769px) {
+  #activaciones {
+    padding-top: 4rem;
+  }
   #activaciones .headline {
     margin-left: 1rem;
   }
@@ -1324,6 +1327,9 @@ footer div .social-logos p {
   display: none;
 }
 @media screen and (max-width: 769px) {
+  #eventos {
+    padding-top: 4rem;
+  }
   #eventos .headline {
     margin-left: 1rem;
   }
@@ -1527,7 +1533,13 @@ footer div .social-logos p {
 #creatividad .categories-container .categories .categories-images-container-mobile {
   display: none;
 }
+#creatividad .categories-container .categories .categories-videos-container-mobile {
+  display: none;
+}
 @media screen and (max-width: 769px) {
+  #creatividad {
+    padding-top: 4rem;
+  }
   #creatividad .headline {
     margin-left: 1rem;
   }
@@ -1600,6 +1612,39 @@ footer div .social-logos p {
     width: fit-content;
     position: relative;
     bottom: 3rem;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 90%;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile .splide {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards video {
+    width: 100%;
+  }
+  #creatividad .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 4rem;
   }
 }
 
@@ -1740,7 +1785,13 @@ footer div .social-logos p {
 #digital .categories-container .categories .categories-images-container-mobile {
   display: none;
 }
+#digital .categories-container .categories .categories-videos-container-mobile {
+  display: none;
+}
 @media screen and (max-width: 769px) {
+  #digital {
+    padding-top: 4rem;
+  }
   #digital .headline {
     margin-left: 1rem;
   }
@@ -1781,9 +1832,6 @@ footer div .social-logos p {
   #digital .categories-container .categories .categories-videos-container {
     display: none;
   }
-  #digital .categories-container .categories .categories-images-container {
-    display: none;
-  }
   #digital .categories-container .categories .categories-images-container-mobile {
     display: flex;
     align-items: center;
@@ -1816,5 +1864,45 @@ footer div .social-logos p {
     width: fit-content;
     position: relative;
     bottom: 3rem;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1.5rem 0rem;
+    width: 90%;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile .splide {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards video {
+    width: 100%;
+  }
+  #digital .categories-container .categories .categories-videos-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 4rem;
+  }
+  #digital .categories-container .categories #slider2 {
+    width: 90%;
+    margin-left: 1rem;
+  }
+  #digital .categories-container .categories #slider2 img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

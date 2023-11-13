@@ -165,11 +165,17 @@
             .categories-images-container-mobile{
                 display: none;
             } 
+
+            .categories-videos-container-mobile{
+                display: none;
+            } 
         }
     }  
     
-     //Mobile
-     @media screen and (max-width: 769px){
+    //Mobile
+    @media screen and (max-width: 769px){
+        padding-top: 4rem;
+
         .headline{
             margin-left: 1rem;
 
@@ -218,10 +224,6 @@
                     display: none;
                 }
 
-                .categories-images-container{
-                    display: none;
-                }
-
                 .categories-images-container-mobile{
 
                     display: flex;
@@ -259,6 +261,55 @@
                             }
                         }
                     } 
+                }
+
+                .categories-videos-container-mobile{
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 1rem 0rem 1.5rem 0rem;
+                    width: 90%;
+
+                    .splide{
+                        width: 100%;
+
+                        .splide__slider{
+                            width: 100%;
+
+                            .categories-cards{
+                                text-align: center;
+        
+                                video{
+                                    width: 100%;
+                                    
+                                }
+        
+                                span{
+                                    color: #000;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    border-radius: 5px;
+                                    background: #FFF;
+                                    text-align: center;                           
+                                    padding: 0.5rem 0.75rem;
+                                    width: fit-content;
+                                    position: relative;
+                                    bottom: 4rem;
+                                }
+                            }
+                        }
+                    } 
+                }
+
+                #slider2{
+                    width: 90%;
+                    margin-left: 1rem;
+
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
