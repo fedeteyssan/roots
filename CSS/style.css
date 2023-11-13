@@ -566,6 +566,8 @@ footer div .social-logos p {
   #queHacemos .card-container .text-container .service-description {
     font-size: 12px;
     margin-top: 1rem;
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -1059,6 +1061,8 @@ footer div .social-logos p {
   #servicios .card-container .text-container .service-description {
     font-size: 12px;
     margin-top: 1rem;
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -1148,6 +1152,68 @@ footer div .social-logos p {
 #activaciones .categories-container .categories .categories-images-container .card2:hover {
   width: 280px;
   filter: grayscale(0%);
+}
+@media screen and (max-width: 769px) {
+  #activaciones .headline {
+    margin-left: 1rem;
+  }
+  #activaciones .headline h2 {
+    font-size: 2rem;
+  }
+  #activaciones .headline p {
+    font-size: 14px;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  #activaciones .categories-container {
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #activaciones .categories-container .categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #activaciones .categories-container .categories .categories-images-container {
+    display: none;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 1.5rem 1rem;
+    width: 90%;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile .splide {
+    width: 100%;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile .splide .splide__slider {
+    width: 100%;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards {
+    text-align: center;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards img {
+    width: 100%;
+  }
+  #activaciones .categories-container .categories .categories-images-container-mobile .splide .splide__slider .categories-cards span {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FFF;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 3rem;
+  }
 }
 
 #eventos {
